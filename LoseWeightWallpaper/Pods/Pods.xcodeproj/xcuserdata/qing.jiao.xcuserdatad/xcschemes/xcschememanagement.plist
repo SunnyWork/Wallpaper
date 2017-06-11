@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-LoseWeightWallpaper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>R.swift.Library.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0A6A295713ED88E8AAFE921954B8C54B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>345531B425189E0B799B8E68BF03C983</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44524FF6D4D53F3A5FA4D4908595EEFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C281E89F1FE617D752C912B0EB2098FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4C7C9CA4D3F5FF70F7BE1DCDF3A9D8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
