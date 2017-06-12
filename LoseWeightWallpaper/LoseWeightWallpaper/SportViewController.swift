@@ -17,16 +17,18 @@ class SportViewController: UIViewController {
   fileprivate let reasonView = UIView()
   fileprivate let titleLabel = UILabel()
   fileprivate let coverView = UIImageView()
-
-  fileprivate var totTime = 30 //mins
-  fileprivate var countDown = 1800 //s
+  
+  fileprivate var totTime = 0 //mins
+  fileprivate var countDown = 0 //s
   fileprivate var timer: Timer?
   
   fileprivate var totalTime: Int {
     set{
-      totTime = newValue
+      totTime = newValue * 60
       countDown = newValue * 60
-      resetTimer()
+      if newValue > 0 {
+        resetTimer()
+      }
     }
     get{
       return totTime
@@ -37,7 +39,13 @@ class SportViewController: UIViewController {
     timer?.invalidate()
     timer = nil
     
+
+    showStartAnimation()
     timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+  }
+  
+  func showStartAnimation() {
+    
   }
   
   func update() {
@@ -56,11 +64,34 @@ class SportViewController: UIViewController {
   }
   
   func finishSport() {
-    
+    let one = ComeonView(text: "Oh! You are the best! You finish!", type: .finishAll)
+    view.addSubview(one)
+    one.snp.makeConstraints { make in
+      make.centerY.centerX.equalTo(view)
+      make.width.height.equalTo(view)
+    }
+    one.show()
+    SoundManager.shared.playFinish()
   }
   
   func showIncentiveIfNeeded() {
-//    if (totTime * 60 - countDown) 
+    let interval = 6
+    if (totTime - countDown) % interval == 0 {
+      let text: String
+      if (totTime - countDown) < interval * 2 {
+        text = "Wow, you have make 5 mins, keep doing it!"
+      } else {
+        text = "Yeah! 5 mins more, just do another 5 mins!"
+      }
+      let one = ComeonView(text: text)
+      view.addSubview(one)
+      one.snp.makeConstraints { make in
+        make.centerY.centerX.equalTo(view)
+        make.width.height.equalTo(view)
+      }
+      one.show()
+      SoundManager.shared.playWin()
+    }
   }
   
   override func viewDidLoad() {
@@ -88,6 +119,14 @@ class SportViewController: UIViewController {
     })
     
     buildHeaderView()
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    timer?.invalidate()
+    timer = nil
+    
+    SoundManager.shared.stop()
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -124,7 +163,7 @@ class SportViewController: UIViewController {
       make.centerX.equalTo(view)
     }
     
-    titleLabel.text = "40m 44s"
+    titleLabel.text = ""
     titleLabel.font = FontType.Medium.font(size: 25)
     titleLabel.textColor = .white
     headerView.addSubview(titleLabel)
@@ -134,6 +173,6 @@ class SportViewController: UIViewController {
       make.bottom.equalTo(headerView).offset(-10)
     }
   }
-
+  
 }
 

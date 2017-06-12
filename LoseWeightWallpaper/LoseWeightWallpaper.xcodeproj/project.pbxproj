@@ -31,6 +31,10 @@
 		C9C463181EED1B000051F501 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C463171EED1B000051F501 /* SportViewController.swift */; };
 		C9C4631B1EED21D10051F501 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4631A1EED21D10051F501 /* InputView.swift */; };
 		C9C4631E1EED2BD50051F501 /* DSGradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4631D1EED2BD50051F501 /* DSGradientProgressView.swift */; };
+		C9EBA8841EEEB3780039FB9C /* ComeonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8831EEEB3780039FB9C /* ComeonView.swift */; };
+		C9EBA8861EEEB92B0039FB9C /* wining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8851EEEB92B0039FB9C /* wining.mp3 */; };
+		C9EBA8881EEEB94E0039FB9C /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8871EEEB94E0039FB9C /* SoundManager.swift */; };
+		C9EBA88A1EEEBCFB0039FB9C /* champions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8891EEEBCFB0039FB9C /* champions.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,10 @@
 		C9C463171EED1B000051F501 /* SportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
 		C9C4631A1EED21D10051F501 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		C9C4631D1EED2BD50051F501 /* DSGradientProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSGradientProgressView.swift; sourceTree = "<group>"; };
+		C9EBA8831EEEB3780039FB9C /* ComeonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComeonView.swift; sourceTree = "<group>"; };
+		C9EBA8851EEEB92B0039FB9C /* wining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wining.mp3; sourceTree = "<group>"; };
+		C9EBA8871EEEB94E0039FB9C /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		C9EBA8891EEEBCFB0039FB9C /* champions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = champions.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 			children = (
 				C9C4631D1EED2BD50051F501 /* DSGradientProgressView.swift */,
 				C92368931EEA9D07009375E6 /* FontType.swift */,
+				C9EBA8871EEEB94E0039FB9C /* SoundManager.swift */,
 				C923687A1EEA99F1009375E6 /* DesignColor.swift */,
 				C923687C1EEA9A00009375E6 /* Extensions.swift */,
 			);
@@ -158,6 +167,8 @@
 				C923687E1EEA9CC8009375E6 /* SanomatGrabApp */,
 				C92752D41EE3F7FE0021DA06 /* Assets.xcassets */,
 				C92752D51EE3F7FE0021DA06 /* LaunchScreen.storyboard */,
+				C9EBA8891EEEBCFB0039FB9C /* champions.mp3 */,
+				C9EBA8851EEEB92B0039FB9C /* wining.mp3 */,
 				C92752D71EE3F7FE0021DA06 /* Main.storyboard */,
 				C92752D91EE3F7FE0021DA06 /* Info.plist */,
 			);
@@ -168,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				C9C4631A1EED21D10051F501 /* InputView.swift */,
+				C9EBA8831EEEB3780039FB9C /* ComeonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +260,8 @@
 				C92752DB1EE3F7FE0021DA06 /* LaunchScreen.storyboard in Resources */,
 				C923688E1EEA9CC8009375E6 /* Sanomat Grab App-Medium TH.ttf in Resources */,
 				C92368911EEA9CC8009375E6 /* Sanomat Grab App-XBold Italic.ttf in Resources */,
+				C9EBA8861EEEB92B0039FB9C /* wining.mp3 in Resources */,
+				C9EBA88A1EEEBCFB0039FB9C /* champions.mp3 in Resources */,
 				C923688F1EEA9CC8009375E6 /* Sanomat Grab App-Regular Italic TH.ttf in Resources */,
 				C92752DD1EE3F7FE0021DA06 /* Info.plist in Resources */,
 			);
@@ -330,6 +344,8 @@
 				C9C4631B1EED21D10051F501 /* InputView.swift in Sources */,
 				C923687D1EEA9A00009375E6 /* Extensions.swift in Sources */,
 				C92368971EEA9E21009375E6 /* R.generated.swift in Sources */,
+				C9EBA8881EEEB94E0039FB9C /* SoundManager.swift in Sources */,
+				C9EBA8841EEEB3780039FB9C /* ComeonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 11 files.
+  /// This `R.file` struct is generated, and contains static references to 13 files.
   struct file {
     /// Resource file `Info.plist`.
     static let infoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "Info", pathExtension: "plist")
@@ -46,6 +46,10 @@ struct R: Rswift.Validatable {
     static let sanomatGrabAppXBoldItalicTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Sanomat Grab App-XBold Italic", pathExtension: "ttf")
     /// Resource file `Sanomat Grab App-XBold.ttf`.
     static let sanomatGrabAppXBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Sanomat Grab App-XBold", pathExtension: "ttf")
+    /// Resource file `champions.mp3`.
+    static let championsMp3 = Rswift.FileResource(bundle: R.hostingBundle, name: "champions", pathExtension: "mp3")
+    /// Resource file `wining.mp3`.
+    static let winingMp3 = Rswift.FileResource(bundle: R.hostingBundle, name: "wining", pathExtension: "mp3")
     
     /// `bundle.url(forResource: "Info", withExtension: "plist")`
     static func infoPlist(_: Void = ()) -> Foundation.URL? {
@@ -110,6 +114,18 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "Sanomat Grab App-XBold", withExtension: "ttf")`
     static func sanomatGrabAppXBoldTtf(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.sanomatGrabAppXBoldTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "champions", withExtension: "mp3")`
+    static func championsMp3(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.championsMp3
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "wining", withExtension: "mp3")`
+    static func winingMp3(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.winingMp3
       return fileResource.bundle.url(forResource: fileResource)
     }
     
@@ -205,20 +221,29 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 4 images.
+  /// This `R.image` struct is generated, and contains static references to 6 images.
   struct image {
     /// Image `bg_1`.
     static let bg_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg_1")
+    /// Image `boy_do`.
+    static let boy_do = Rswift.ImageResource(bundle: R.hostingBundle, name: "boy_do")
     /// Image `icon_close`.
     static let icon_close = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_close")
     /// Image `icon_menu`.
     static let icon_menu = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_menu")
     /// Image `sport_bg_1`.
     static let sport_bg_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "sport_bg_1")
+    /// Image `wonder_women`.
+    static let wonder_women = Rswift.ImageResource(bundle: R.hostingBundle, name: "wonder_women")
     
     /// `UIImage(named: "bg_1", bundle: ..., traitCollection: ...)`
     static func bg_1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.bg_1, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "boy_do", bundle: ..., traitCollection: ...)`
+    static func boy_do(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.boy_do, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "icon_close", bundle: ..., traitCollection: ...)`
@@ -234,6 +259,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "sport_bg_1", bundle: ..., traitCollection: ...)`
     static func sport_bg_1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.sport_bg_1, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "wonder_women", bundle: ..., traitCollection: ...)`
+    static func wonder_women(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.wonder_women, compatibleWith: traitCollection)
     }
     
     fileprivate init() {}
