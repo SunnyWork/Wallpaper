@@ -35,6 +35,12 @@
 		C9EBA8861EEEB92B0039FB9C /* wining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8851EEEB92B0039FB9C /* wining.mp3 */; };
 		C9EBA8881EEEB94E0039FB9C /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8871EEEB94E0039FB9C /* SoundManager.swift */; };
 		C9EBA88A1EEEBCFB0039FB9C /* champions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8891EEEBCFB0039FB9C /* champions.mp3 */; };
+		C9EBA88C1EEF86040039FB9C /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA88B1EEF86040039FB9C /* DisplayView.swift */; };
+		C9EBA8901EEF8E230039FB9C /* PSY3D_CircleAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA88F1EEF8E230039FB9C /* PSY3D_CircleAnimationView.m */; };
+		C9EBA8961EEF92880039FB9C /* people_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8951EEF92880039FB9C /* people_1.jpg */; };
+		C9EBA89C1EEF930E0039FB9C /* people_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA89B1EEF930E0039FB9C /* people_3.jpg */; };
+		C9EBA89E1EEF931E0039FB9C /* word_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA89D1EEF931E0039FB9C /* word_1.jpg */; };
+		C9EBA8A01EEF94370039FB9C /* people_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA89F1EEF94370039FB9C /* people_2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +75,14 @@
 		C9EBA8851EEEB92B0039FB9C /* wining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wining.mp3; sourceTree = "<group>"; };
 		C9EBA8871EEEB94E0039FB9C /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		C9EBA8891EEEBCFB0039FB9C /* champions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = champions.mp3; sourceTree = "<group>"; };
+		C9EBA88B1EEF86040039FB9C /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		C9EBA88E1EEF8E230039FB9C /* PSY3D_CircleAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSY3D_CircleAnimationView.h; sourceTree = "<group>"; };
+		C9EBA88F1EEF8E230039FB9C /* PSY3D_CircleAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSY3D_CircleAnimationView.m; sourceTree = "<group>"; };
+		C9EBA8931EEF91480039FB9C /* LoseWeightWallpaper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoseWeightWallpaper-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9EBA8951EEF92880039FB9C /* people_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people_1.jpg; sourceTree = "<group>"; };
+		C9EBA89B1EEF930E0039FB9C /* people_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people_3.jpg; sourceTree = "<group>"; };
+		C9EBA89D1EEF931E0039FB9C /* word_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = word_1.jpg; sourceTree = "<group>"; };
+		C9EBA89F1EEF94370039FB9C /* people_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people_2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				C92368961EEA9E21009375E6 /* R.generated.swift */,
+				C9EBA8931EEF91480039FB9C /* LoseWeightWallpaper-Bridging-Header.h */,
 				C92752C01EE3F7B60021DA06 /* LoseWeightWallpaper */,
 				C92752BF1EE3F7B60021DA06 /* Products */,
 				2F5B3CA82097759A28B9AC72 /* Pods */,
@@ -155,6 +170,7 @@
 				C92752C11EE3F7B60021DA06 /* AppDelegate.swift */,
 				C9C463171EED1B000051F501 /* SportViewController.swift */,
 				C92752C31EE3F7B60021DA06 /* HomeViewController.swift */,
+				C9EBA88D1EEF8E230039FB9C /* 3DAnimationView */,
 				C9C463191EED21C20051F501 /* Views */,
 				C92752D31EE3F7FE0021DA06 /* Resources */,
 			);
@@ -166,6 +182,7 @@
 			children = (
 				C923687E1EEA9CC8009375E6 /* SanomatGrabApp */,
 				C92752D41EE3F7FE0021DA06 /* Assets.xcassets */,
+				C9EBA8941EEF924D0039FB9C /* images */,
 				C92752D51EE3F7FE0021DA06 /* LaunchScreen.storyboard */,
 				C9EBA8891EEEBCFB0039FB9C /* champions.mp3 */,
 				C9EBA8851EEEB92B0039FB9C /* wining.mp3 */,
@@ -180,8 +197,29 @@
 			children = (
 				C9C4631A1EED21D10051F501 /* InputView.swift */,
 				C9EBA8831EEEB3780039FB9C /* ComeonView.swift */,
+				C9EBA88B1EEF86040039FB9C /* DisplayView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C9EBA88D1EEF8E230039FB9C /* 3DAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA88E1EEF8E230039FB9C /* PSY3D_CircleAnimationView.h */,
+				C9EBA88F1EEF8E230039FB9C /* PSY3D_CircleAnimationView.m */,
+			);
+			path = 3DAnimationView;
+			sourceTree = "<group>";
+		};
+		C9EBA8941EEF924D0039FB9C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA89F1EEF94370039FB9C /* people_2.jpg */,
+				C9EBA8951EEF92880039FB9C /* people_1.jpg */,
+				C9EBA89B1EEF930E0039FB9C /* people_3.jpg */,
+				C9EBA89D1EEF931E0039FB9C /* word_1.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +291,12 @@
 				C923688C1EEA9CC8009375E6 /* Sanomat Grab App-Light TH.ttf in Resources */,
 				C92368891EEA9CC8009375E6 /* Sanomat Grab App-Bold Italic.ttf in Resources */,
 				C923688D1EEA9CC8009375E6 /* Sanomat Grab App-Medium Italic TH.ttf in Resources */,
+				C9EBA8A01EEF94370039FB9C /* people_2.jpg in Resources */,
+				C9EBA8961EEF92880039FB9C /* people_1.jpg in Resources */,
 				C923688B1EEA9CC8009375E6 /* Sanomat Grab App-Light Italic TH.ttf in Resources */,
 				C92368921EEA9CC8009375E6 /* Sanomat Grab App-XBold.ttf in Resources */,
 				C92368901EEA9CC8009375E6 /* Sanomat Grab App-Regular TH.ttf in Resources */,
+				C9EBA89E1EEF931E0039FB9C /* word_1.jpg in Resources */,
 				C923688A1EEA9CC8009375E6 /* Sanomat Grab App-Bold.ttf in Resources */,
 				C92752DB1EE3F7FE0021DA06 /* LaunchScreen.storyboard in Resources */,
 				C923688E1EEA9CC8009375E6 /* Sanomat Grab App-Medium TH.ttf in Resources */,
@@ -264,6 +305,7 @@
 				C9EBA88A1EEEBCFB0039FB9C /* champions.mp3 in Resources */,
 				C923688F1EEA9CC8009375E6 /* Sanomat Grab App-Regular Italic TH.ttf in Resources */,
 				C92752DD1EE3F7FE0021DA06 /* Info.plist in Resources */,
+				C9EBA89C1EEF930E0039FB9C /* people_3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +379,7 @@
 			files = (
 				C9C4631E1EED2BD50051F501 /* DSGradientProgressView.swift in Sources */,
 				C92752C41EE3F7B60021DA06 /* HomeViewController.swift in Sources */,
+				C9EBA8901EEF8E230039FB9C /* PSY3D_CircleAnimationView.m in Sources */,
 				C9C463181EED1B000051F501 /* SportViewController.swift in Sources */,
 				C923687B1EEA99F1009375E6 /* DesignColor.swift in Sources */,
 				C92752C21EE3F7B60021DA06 /* AppDelegate.swift in Sources */,
@@ -344,6 +387,7 @@
 				C9C4631B1EED21D10051F501 /* InputView.swift in Sources */,
 				C923687D1EEA9A00009375E6 /* Extensions.swift in Sources */,
 				C92368971EEA9E21009375E6 /* R.generated.swift in Sources */,
+				C9EBA88C1EEF86040039FB9C /* DisplayView.swift in Sources */,
 				C9EBA8881EEEB94E0039FB9C /* SoundManager.swift in Sources */,
 				C9EBA8841EEEB3780039FB9C /* ComeonView.swift in Sources */,
 			);
@@ -417,6 +461,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "LoseWeightWallpaper-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -459,6 +504,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "LoseWeightWallpaper-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};

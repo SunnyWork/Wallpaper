@@ -50,7 +50,7 @@ class SportViewController: UIViewController {
   
   func update() {
     countDown -= 1
-    guard countDown > 0 else {
+    guard countDown >= 0 else {
       timer?.invalidate()
       timer = nil
       finishSport()
@@ -75,7 +75,7 @@ class SportViewController: UIViewController {
   }
   
   func showIncentiveIfNeeded() {
-    let interval = 6
+    let interval = 5 * 60
     if (totTime - countDown) % interval == 0 {
       let text: String
       if (totTime - countDown) < interval * 2 {
@@ -97,10 +97,10 @@ class SportViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let bgV = UIImageView()
+    view.backgroundColor = UIColor.black
+    
+    let bgV = DisplayView()
     view.addSubview(bgV)
-    bgV.image = R.image.sport_bg_1()
-    bgV.contentMode = .scaleAspectFill
     bgV.snp.makeConstraints { make in
       make.top.trailing.leading.bottom.equalTo(view)
     }

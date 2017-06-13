@@ -30,6 +30,10 @@ class SoundManager {
     playSound(name: "champions")
   }
   
+  func playStart() {
+    playSound(name: "champions")
+  }
+  
   func stop() {
     note?.stop()
   }

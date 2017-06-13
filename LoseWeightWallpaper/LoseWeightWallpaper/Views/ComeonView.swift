@@ -72,10 +72,11 @@ class ComeonView: UIView {
   
   func show() {
     self.alpha = 0
+    let duration = (type == .finishSomeTime) ? 4 : 10
     UIView.animate(withDuration: 0.3, animations: {
       self.alpha = 1
     }, completion: { _ in
-      self.timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.hide), userInfo: nil, repeats: false)
+      self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(duration), target: self, selector: #selector(self.hide), userInfo: nil, repeats: false)
     })
   }
   
