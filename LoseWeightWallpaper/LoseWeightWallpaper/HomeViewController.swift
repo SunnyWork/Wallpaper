@@ -12,9 +12,22 @@ import RxSwift
 import RxCocoa
 
 class HomeViewController: UIViewController {
-  fileprivate let headerView = UIImageView()
-  fileprivate let reasonView = UIView()
+  fileprivate let disposeBag = DisposeBag()
 
+  fileprivate let progress = DSGradientProgressView()
+  fileprivate let headerView = UIView()
+  fileprivate let reasonView = UIView()
+  fileprivate let coverView = UIImageView()
+
+  fileprivate let initLabel = UILabel()
+  fileprivate let currentLabel = UILabel()
+  fileprivate let targetLabel = UILabel()
+  
+  fileprivate let reasonLabel = UILabel()
+
+  let weightTip = PlainTextTipView(text: "Click number to update!")
+  let reasonTip = PlainTextTipView(text: "Click here to update!")
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -25,12 +38,163 @@ class HomeViewController: UIViewController {
     bgV.snp.makeConstraints { make in
       make.top.trailing.leading.bottom.equalTo(view)
     }
-
+    
     buildHeaderView()
     
     buildReasonView()
     
     buildBottomView()
+    
+    resetLabelValue()
+    
+    
+    currentLabel.isUserInteractionEnabled = true
+    var tapG = UITapGestureRecognizer()
+    currentLabel.addGestureRecognizer(tapG)
+    tapG.rx.event.subscribe(onNext: { [unowned self] _ in
+      self.updateCurrentView()
+    }).addDisposableTo(self.disposeBag)
+    
+    reasonLabel.isUserInteractionEnabled = true
+    tapG = UITapGestureRecognizer()
+    reasonLabel.addGestureRecognizer(tapG)
+    tapG.rx.event.subscribe(onNext: { [unowned self] _ in
+      self.updateReason()
+    }).addDisposableTo(self.disposeBag)
+  }
+  
+  fileprivate func updateCurrentView() {
+    let inputView = InputTimeView(labelText: "Update your weight", callback: {
+      [unowned self] value in
+      DataContainer.shared.currentWeight = Int(value)
+      self.resetLabelValue()
+      self.weightTip.hide()
+    })
+    
+    view.addSubview(inputView)
+    inputView.snp.makeConstraints { make in
+      make.centerX.equalTo(view)
+      make.top.equalTo(view).offset(100)
+      make.width.equalTo(view).offset(-20)
+    }
+    
+    inputView.show()
+  }
+  
+  fileprivate func updateReason() {
+    let inputView = InputTimeView(labelText: "Why you do it!", callback: {
+      [unowned self] value in
+      guard !value.isEmpty else { return }
+      DataContainer.shared.reason = value
+      self.resetLabelValue()
+      self.reasonTip.hide()
+    }, inputType: InputType.string)
+    
+    view.addSubview(inputView)
+    inputView.snp.makeConstraints { make in
+      make.centerX.equalTo(view)
+      make.top.equalTo(view).offset(100)
+      make.width.equalTo(view).offset(-20)
+    }
+    
+    inputView.show()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    guard DataContainer.shared.targetWeight == nil else { return }
+    
+    let inputView = InputTargetView() {
+      [unowned self] targetWeight, currentWeight, reason in
+      DataContainer.shared.targetWeight = targetWeight
+      DataContainer.shared.initWeight = currentWeight
+      DataContainer.shared.currentWeight = currentWeight
+      DataContainer.shared.reason = reason
+      
+      self.resetLabelValue()
+      self.showTutorial()
+    }
+    
+    view.addSubview(inputView)
+    inputView.snp.makeConstraints { make in
+      make.centerX.equalTo(view)
+      make.top.equalTo(view).offset(20)
+      make.width.equalTo(view).offset(-20)
+    }
+    
+    inputView.show()
+  }
+  
+  fileprivate func resetLabelValue() {
+    guard let initW = DataContainer.shared.initWeight else { return }
+    guard let curW = DataContainer.shared.currentWeight else { return }
+    guard let tarW = DataContainer.shared.targetWeight else { return }
+    guard let reason = DataContainer.shared.reason else { return }
+    
+    initLabel.text = "\(initW)Kg"
+    currentLabel.text = "\(curW)Kg"
+    targetLabel.text = "\(tarW)Kg"
+    reasonLabel.text = reason
+    
+    self.view.setNeedsLayout()
+    
+    if curW <= tarW {
+      finishSport()
+    }
+  }
+  
+  func finishSport() {
+    let one = ComeonView(text: "Oh! You are the best! You finish!", type: .finishAll)
+    view.addSubview(one)
+    one.snp.makeConstraints { make in
+      make.centerY.centerX.equalTo(view)
+      make.width.height.equalTo(view)
+    }
+    one.show()
+    SoundManager.shared.playFinish()
+  }
+  
+  fileprivate func showTutorial() {
+    headerView.addSubview(weightTip)
+    weightTip.snp.makeConstraints{make in
+      make.width.equalTo(110)
+      make.top.equalTo(currentLabel.snp.bottom).offset(5)
+      make.leading.equalTo(currentLabel).offset(-5)
+    }
+    
+    view.addSubview(reasonTip)
+    reasonTip.snp.makeConstraints{make in
+      make.width.equalTo(110)
+      make.top.equalTo(reasonLabel.snp.bottom).offset(5)
+      make.leading.equalTo(reasonLabel).offset(10)
+    }
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    resetProgressBar()
+  }
+  
+  fileprivate func resetProgressBar() {
+    guard let initW = DataContainer.shared.initWeight else { return }
+    guard let curW = DataContainer.shared.currentWeight else { return }
+    guard let tarW = DataContainer.shared.targetWeight else { return }
+    
+    var rect = progress.frame
+    let diff: CGFloat = CGFloat(initW - tarW)
+    rect.size.width *= 1 - CGFloat(curW - tarW) / diff
+    
+    coverView.frame = rect
+    
+    let ny = rect.origin.y - rect.size.height - 12
+    let nx = min(rect.origin.x + rect.size.width - 20, headerView.frame.size.width - 52)
+    rect.origin.x = max(nx, 0)
+    rect.origin.y = ny
+    rect.size.height += 8
+    rect.size.width = 58
+    
+    currentLabel.frame = rect
   }
   
 }
@@ -69,8 +233,6 @@ extension HomeViewController {
     reasonView.layer.shadowOpacity = 0.44
     reasonView.layer.shadowRadius = 1
 
-    let reasonLabel = UILabel()
-    reasonLabel.text = "Because: I don't want to admire others any more!"
     reasonLabel.font = FontType.Regular.font(size: 17)
     reasonLabel.textColor = .white
     reasonLabel.numberOfLines = 0
@@ -123,7 +285,6 @@ extension HomeViewController {
   }
   
   fileprivate func buildProgressView() {
-    let progress = DSGradientProgressView()
     headerView.addSubview(progress)
     
     progress.barColor = DesignColor.Desire
@@ -137,42 +298,27 @@ extension HomeViewController {
     }
     progress.start()
     
-    let coverView = UIImageView()
     headerView.addSubview(coverView)
     coverView.layer.cornerRadius = progress.layer.cornerRadius
     coverView.backgroundColor = DesignColor.Desire
-    coverView.snp.makeConstraints { make in
-      make.top.leading.height.equalTo(progress)
-      make.width.equalTo(150)
-    }
     
-    let titleLabel = UILabel()
-    titleLabel.text = "75Kg"
-    titleLabel.font = FontType.Bold.font(size: 22)
-    titleLabel.textColor = UIColor.white
-    headerView.addSubview(titleLabel)
-    titleLabel.snp.makeConstraints { make in
+    initLabel.font = FontType.Bold.font(size: 22)
+    initLabel.textColor = UIColor.white
+    headerView.addSubview(initLabel)
+    initLabel.snp.makeConstraints { make in
       make.leading.equalTo(progress)
       make.top.equalTo(progress.snp.bottom).offset(9)
       make.bottom.equalTo(headerView).offset(-25)
     }
     
-    let nowLabel = UILabel()
-    nowLabel.text = "71Kg"
-    nowLabel.font = FontType.Bold.font(size: 22)
-    nowLabel.textColor = UIColor.white
-    headerView.addSubview(nowLabel)
-    nowLabel.snp.makeConstraints { make in
-      make.trailing.equalTo(coverView).offset(7)
-      make.top.equalTo(progress.snp.bottom).offset(9)
-    }
+    currentLabel.font = FontType.Bold.font(size: 22)
+    currentLabel.textColor = DesignColor.Desire
+    headerView.addSubview(currentLabel)
     
-    let pLabel = UILabel()
-    pLabel.text = "58Kg"
-    pLabel.font = FontType.Bold.font(size: 22)
-    pLabel.textColor = .white
-    headerView.addSubview(pLabel)
-    pLabel.snp.makeConstraints { make in
+    targetLabel.font = FontType.Bold.font(size: 22)
+    targetLabel.textColor = .white
+    headerView.addSubview(targetLabel)
+    targetLabel.snp.makeConstraints { make in
       make.trailing.equalTo(progress)
       make.top.equalTo(progress.snp.bottom).offset(9)
     }

@@ -113,7 +113,7 @@
         //创建视图并设置默认图片
         self.imageView.image=[UIImage imageNamed:self.PSY3D_ImageDataSource[0]];
         self.imageView.alpha = 1.0f;
-        self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+        self.imageView.contentMode = UIViewContentModeScaleAspectFit;
       
         //添加点击手势
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickHandel:)];//默认点击第一张

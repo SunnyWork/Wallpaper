@@ -39,7 +39,7 @@ class SportViewController: UIViewController {
     timer?.invalidate()
     timer = nil
     
-
+    
     showStartAnimation()
     timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
   }
@@ -94,6 +94,27 @@ class SportViewController: UIViewController {
     }
   }
   
+  func closeAction() {
+    if countDown <= 0 {
+      self.dismiss(animated: true, completion: nil)
+      return
+    }
+    
+    let iv = RememberView(){
+      self.dismiss(animated: true, completion: nil)
+    }
+    view.addSubview(iv)
+    iv.snp.makeConstraints { make in
+      make.leading.equalTo(view).offset(20)
+      make.top.equalTo(view).offset(20)
+      make.trailing.equalTo(view).offset(-20)
+    }
+  }
+  
+  override var preferredStatusBarStyle : UIStatusBarStyle {
+    return UIStatusBarStyle.lightContent
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -115,7 +136,7 @@ class SportViewController: UIViewController {
       make.height.equalTo(35)
     }
     _ = menuButton.rx.tap.subscribe(onNext: { [unowned self] _ in
-      self.dismiss(animated: true, completion: nil)
+      self.closeAction()
     })
     
     buildHeaderView()
@@ -132,9 +153,9 @@ class SportViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
-    let inputView = InputView(labelText: "Set Time(mins)", callback: {
+    let inputView = InputTimeView(labelText: "Set Time(mins)", callback: {
       [unowned self] newTime in
-      self.totalTime = newTime
+      self.totalTime = Int(newTime)!
     })
     
     view.addSubview(inputView)

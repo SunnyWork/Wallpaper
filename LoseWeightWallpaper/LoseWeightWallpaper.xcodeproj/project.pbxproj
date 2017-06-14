@@ -29,7 +29,7 @@
 		C92752DC1EE3F7FE0021DA06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92752D71EE3F7FE0021DA06 /* Main.storyboard */; };
 		C92752DD1EE3F7FE0021DA06 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C92752D91EE3F7FE0021DA06 /* Info.plist */; };
 		C9C463181EED1B000051F501 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C463171EED1B000051F501 /* SportViewController.swift */; };
-		C9C4631B1EED21D10051F501 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4631A1EED21D10051F501 /* InputView.swift */; };
+		C9C4631B1EED21D10051F501 /* InputTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4631A1EED21D10051F501 /* InputTimeView.swift */; };
 		C9C4631E1EED2BD50051F501 /* DSGradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4631D1EED2BD50051F501 /* DSGradientProgressView.swift */; };
 		C9EBA8841EEEB3780039FB9C /* ComeonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8831EEEB3780039FB9C /* ComeonView.swift */; };
 		C9EBA8861EEEB92B0039FB9C /* wining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8851EEEB92B0039FB9C /* wining.mp3 */; };
@@ -41,6 +41,16 @@
 		C9EBA89C1EEF930E0039FB9C /* people_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA89B1EEF930E0039FB9C /* people_3.jpg */; };
 		C9EBA89E1EEF931E0039FB9C /* word_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA89D1EEF931E0039FB9C /* word_1.jpg */; };
 		C9EBA8A01EEF94370039FB9C /* people_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA89F1EEF94370039FB9C /* people_2.jpg */; };
+		C9EBA8A41EEFDD100039FB9C /* RememberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8A31EEFDD100039FB9C /* RememberView.swift */; };
+		C9EBA8A61EEFE2CA0039FB9C /* keep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8A51EEFE2CA0039FB9C /* keep.mp3 */; };
+		C9EBA8AC1EEFE5430039FB9C /* people_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8A71EEFE5430039FB9C /* people_4.jpg */; };
+		C9EBA8AD1EEFE5430039FB9C /* people_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8A81EEFE5430039FB9C /* people_5.jpg */; };
+		C9EBA8AE1EEFE5430039FB9C /* people_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8A91EEFE5430039FB9C /* people_6.jpg */; };
+		C9EBA8AF1EEFE5430039FB9C /* people_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8AA1EEFE5430039FB9C /* people_7.jpg */; };
+		C9EBA8B01EEFE5430039FB9C /* word_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8AB1EEFE5430039FB9C /* word_2.jpg */; };
+		C9EBA8B21EEFEB1C0039FB9C /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B11EEFEB1C0039FB9C /* DataContainer.swift */; };
+		C9EBA8B41EF0CA460039FB9C /* InputTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B31EF0CA460039FB9C /* InputTargetView.swift */; };
+		C9EBA8B61EF0D5200039FB9C /* PlainTextTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B51EF0D5200039FB9C /* PlainTextTipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +79,7 @@
 		C92752D81EE3F7FE0021DA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C92752D91EE3F7FE0021DA06 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C463171EED1B000051F501 /* SportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
-		C9C4631A1EED21D10051F501 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		C9C4631A1EED21D10051F501 /* InputTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTimeView.swift; sourceTree = "<group>"; };
 		C9C4631D1EED2BD50051F501 /* DSGradientProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSGradientProgressView.swift; sourceTree = "<group>"; };
 		C9EBA8831EEEB3780039FB9C /* ComeonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComeonView.swift; sourceTree = "<group>"; };
 		C9EBA8851EEEB92B0039FB9C /* wining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wining.mp3; sourceTree = "<group>"; };
@@ -83,6 +93,16 @@
 		C9EBA89B1EEF930E0039FB9C /* people_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people_3.jpg; sourceTree = "<group>"; };
 		C9EBA89D1EEF931E0039FB9C /* word_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = word_1.jpg; sourceTree = "<group>"; };
 		C9EBA89F1EEF94370039FB9C /* people_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people_2.jpg; sourceTree = "<group>"; };
+		C9EBA8A31EEFDD100039FB9C /* RememberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RememberView.swift; sourceTree = "<group>"; };
+		C9EBA8A51EEFE2CA0039FB9C /* keep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = keep.mp3; sourceTree = "<group>"; };
+		C9EBA8A71EEFE5430039FB9C /* people_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people_4.jpg; sourceTree = "<group>"; };
+		C9EBA8A81EEFE5430039FB9C /* people_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people_5.jpg; sourceTree = "<group>"; };
+		C9EBA8A91EEFE5430039FB9C /* people_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people_6.jpg; sourceTree = "<group>"; };
+		C9EBA8AA1EEFE5430039FB9C /* people_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people_7.jpg; sourceTree = "<group>"; };
+		C9EBA8AB1EEFE5430039FB9C /* word_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = word_2.jpg; sourceTree = "<group>"; };
+		C9EBA8B11EEFEB1C0039FB9C /* DataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
+		C9EBA8B31EF0CA460039FB9C /* InputTargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTargetView.swift; sourceTree = "<group>"; };
+		C9EBA8B51EF0D5200039FB9C /* PlainTextTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainTextTipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +142,7 @@
 				C9EBA8871EEEB94E0039FB9C /* SoundManager.swift */,
 				C923687A1EEA99F1009375E6 /* DesignColor.swift */,
 				C923687C1EEA9A00009375E6 /* Extensions.swift */,
+				C9EBA8B11EEFEB1C0039FB9C /* DataContainer.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -186,6 +207,7 @@
 				C92752D51EE3F7FE0021DA06 /* LaunchScreen.storyboard */,
 				C9EBA8891EEEBCFB0039FB9C /* champions.mp3 */,
 				C9EBA8851EEEB92B0039FB9C /* wining.mp3 */,
+				C9EBA8A51EEFE2CA0039FB9C /* keep.mp3 */,
 				C92752D71EE3F7FE0021DA06 /* Main.storyboard */,
 				C92752D91EE3F7FE0021DA06 /* Info.plist */,
 			);
@@ -195,9 +217,12 @@
 		C9C463191EED21C20051F501 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C9C4631A1EED21D10051F501 /* InputView.swift */,
+				C9C4631A1EED21D10051F501 /* InputTimeView.swift */,
 				C9EBA8831EEEB3780039FB9C /* ComeonView.swift */,
 				C9EBA88B1EEF86040039FB9C /* DisplayView.swift */,
+				C9EBA8A31EEFDD100039FB9C /* RememberView.swift */,
+				C9EBA8B31EF0CA460039FB9C /* InputTargetView.swift */,
+				C9EBA8B51EF0D5200039FB9C /* PlainTextTipView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,10 +239,15 @@
 		C9EBA8941EEF924D0039FB9C /* images */ = {
 			isa = PBXGroup;
 			children = (
-				C9EBA89F1EEF94370039FB9C /* people_2.jpg */,
 				C9EBA8951EEF92880039FB9C /* people_1.jpg */,
+				C9EBA89F1EEF94370039FB9C /* people_2.jpg */,
 				C9EBA89B1EEF930E0039FB9C /* people_3.jpg */,
+				C9EBA8A71EEFE5430039FB9C /* people_4.jpg */,
+				C9EBA8A81EEFE5430039FB9C /* people_5.jpg */,
+				C9EBA8A91EEFE5430039FB9C /* people_6.jpg */,
+				C9EBA8AA1EEFE5430039FB9C /* people_7.jpg */,
 				C9EBA89D1EEF931E0039FB9C /* word_1.jpg */,
+				C9EBA8AB1EEFE5430039FB9C /* word_2.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -291,13 +321,17 @@
 				C923688C1EEA9CC8009375E6 /* Sanomat Grab App-Light TH.ttf in Resources */,
 				C92368891EEA9CC8009375E6 /* Sanomat Grab App-Bold Italic.ttf in Resources */,
 				C923688D1EEA9CC8009375E6 /* Sanomat Grab App-Medium Italic TH.ttf in Resources */,
+				C9EBA8AE1EEFE5430039FB9C /* people_6.jpg in Resources */,
 				C9EBA8A01EEF94370039FB9C /* people_2.jpg in Resources */,
 				C9EBA8961EEF92880039FB9C /* people_1.jpg in Resources */,
 				C923688B1EEA9CC8009375E6 /* Sanomat Grab App-Light Italic TH.ttf in Resources */,
 				C92368921EEA9CC8009375E6 /* Sanomat Grab App-XBold.ttf in Resources */,
 				C92368901EEA9CC8009375E6 /* Sanomat Grab App-Regular TH.ttf in Resources */,
 				C9EBA89E1EEF931E0039FB9C /* word_1.jpg in Resources */,
+				C9EBA8AC1EEFE5430039FB9C /* people_4.jpg in Resources */,
+				C9EBA8A61EEFE2CA0039FB9C /* keep.mp3 in Resources */,
 				C923688A1EEA9CC8009375E6 /* Sanomat Grab App-Bold.ttf in Resources */,
+				C9EBA8AD1EEFE5430039FB9C /* people_5.jpg in Resources */,
 				C92752DB1EE3F7FE0021DA06 /* LaunchScreen.storyboard in Resources */,
 				C923688E1EEA9CC8009375E6 /* Sanomat Grab App-Medium TH.ttf in Resources */,
 				C92368911EEA9CC8009375E6 /* Sanomat Grab App-XBold Italic.ttf in Resources */,
@@ -306,6 +340,8 @@
 				C923688F1EEA9CC8009375E6 /* Sanomat Grab App-Regular Italic TH.ttf in Resources */,
 				C92752DD1EE3F7FE0021DA06 /* Info.plist in Resources */,
 				C9EBA89C1EEF930E0039FB9C /* people_3.jpg in Resources */,
+				C9EBA8B01EEFE5430039FB9C /* word_2.jpg in Resources */,
+				C9EBA8AF1EEFE5430039FB9C /* people_7.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,16 +415,20 @@
 			files = (
 				C9C4631E1EED2BD50051F501 /* DSGradientProgressView.swift in Sources */,
 				C92752C41EE3F7B60021DA06 /* HomeViewController.swift in Sources */,
+				C9EBA8B41EF0CA460039FB9C /* InputTargetView.swift in Sources */,
 				C9EBA8901EEF8E230039FB9C /* PSY3D_CircleAnimationView.m in Sources */,
 				C9C463181EED1B000051F501 /* SportViewController.swift in Sources */,
 				C923687B1EEA99F1009375E6 /* DesignColor.swift in Sources */,
 				C92752C21EE3F7B60021DA06 /* AppDelegate.swift in Sources */,
 				C92368941EEA9D07009375E6 /* FontType.swift in Sources */,
-				C9C4631B1EED21D10051F501 /* InputView.swift in Sources */,
+				C9C4631B1EED21D10051F501 /* InputTimeView.swift in Sources */,
 				C923687D1EEA9A00009375E6 /* Extensions.swift in Sources */,
+				C9EBA8A41EEFDD100039FB9C /* RememberView.swift in Sources */,
 				C92368971EEA9E21009375E6 /* R.generated.swift in Sources */,
+				C9EBA8B21EEFEB1C0039FB9C /* DataContainer.swift in Sources */,
 				C9EBA88C1EEF86040039FB9C /* DisplayView.swift in Sources */,
 				C9EBA8881EEEB94E0039FB9C /* SoundManager.swift in Sources */,
+				C9EBA8B61EF0D5200039FB9C /* PlainTextTipView.swift in Sources */,
 				C9EBA8841EEEB3780039FB9C /* ComeonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
