@@ -51,6 +51,8 @@
 		C9EBA8B21EEFEB1C0039FB9C /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B11EEFEB1C0039FB9C /* DataContainer.swift */; };
 		C9EBA8B41EF0CA460039FB9C /* InputTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B31EF0CA460039FB9C /* InputTargetView.swift */; };
 		C9EBA8B61EF0D5200039FB9C /* PlainTextTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B51EF0D5200039FB9C /* PlainTextTipView.swift */; };
+		C9EBA8B81EF0F3330039FB9C /* MenuWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B71EF0F3330039FB9C /* MenuWindow.swift */; };
+		C9EBA8BA1EF10F5A0039FB9C /* WallPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B91EF10F5A0039FB9C /* WallPaperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +105,8 @@
 		C9EBA8B11EEFEB1C0039FB9C /* DataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
 		C9EBA8B31EF0CA460039FB9C /* InputTargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTargetView.swift; sourceTree = "<group>"; };
 		C9EBA8B51EF0D5200039FB9C /* PlainTextTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainTextTipView.swift; sourceTree = "<group>"; };
+		C9EBA8B71EF0F3330039FB9C /* MenuWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuWindow.swift; sourceTree = "<group>"; };
+		C9EBA8B91EF10F5A0039FB9C /* WallPaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallPaperViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,8 @@
 				C92752C11EE3F7B60021DA06 /* AppDelegate.swift */,
 				C9C463171EED1B000051F501 /* SportViewController.swift */,
 				C92752C31EE3F7B60021DA06 /* HomeViewController.swift */,
+				C9EBA8B91EF10F5A0039FB9C /* WallPaperViewController.swift */,
+				C9EBA8B71EF0F3330039FB9C /* MenuWindow.swift */,
 				C9EBA88D1EEF8E230039FB9C /* 3DAnimationView */,
 				C9C463191EED21C20051F501 /* Views */,
 				C92752D31EE3F7FE0021DA06 /* Resources */,
@@ -425,7 +431,9 @@
 				C923687D1EEA9A00009375E6 /* Extensions.swift in Sources */,
 				C9EBA8A41EEFDD100039FB9C /* RememberView.swift in Sources */,
 				C92368971EEA9E21009375E6 /* R.generated.swift in Sources */,
+				C9EBA8B81EF0F3330039FB9C /* MenuWindow.swift in Sources */,
 				C9EBA8B21EEFEB1C0039FB9C /* DataContainer.swift in Sources */,
+				C9EBA8BA1EF10F5A0039FB9C /* WallPaperViewController.swift in Sources */,
 				C9EBA88C1EEF86040039FB9C /* DisplayView.swift in Sources */,
 				C9EBA8881EEEB94E0039FB9C /* SoundManager.swift in Sources */,
 				C9EBA8B61EF0D5200039FB9C /* PlainTextTipView.swift in Sources */,

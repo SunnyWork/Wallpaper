@@ -10,7 +10,8 @@ import UIKit
 import SnapKit
 
 class DisplayView: UIView {
-  
+  let imageView = PSY3D_CircleAnimationView()
+
   override init(frame: CGRect) {
     super.init(frame: frame)
     
@@ -26,7 +27,6 @@ class DisplayView: UIView {
     }
     imageArr.shuffle()
     
-    let imageView = PSY3D_CircleAnimationView()
     imageView.animationDurtion = 5
     imageView.duration = 0.5
     imageView.animationType = PSY3DAnimationTpye.moveIn
@@ -40,8 +40,14 @@ class DisplayView: UIView {
     }
   }
   
+  func closeDisplayTimer() {
+    imageView.timer.invalidate()
+    imageView.timer = nil
+  }
+  
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 }
+
 

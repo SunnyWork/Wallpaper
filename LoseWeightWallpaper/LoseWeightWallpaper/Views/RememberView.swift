@@ -28,6 +28,8 @@ class RememberView: UIView {
     addSubview(iv)
     iv.contentMode = .scaleAspectFit
     iv.image = R.image.despise()
+    iv.clipsToBounds = true
+    iv.layer.cornerRadius = 20
     iv.snp.makeConstraints { make in
       make.centerX.equalTo(self)
       make.top.equalTo(self).offset(20)

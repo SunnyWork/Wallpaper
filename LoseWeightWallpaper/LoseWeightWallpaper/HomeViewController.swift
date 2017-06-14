@@ -13,18 +13,26 @@ import RxCocoa
 
 class HomeViewController: UIViewController {
   fileprivate let disposeBag = DisposeBag()
-
+  
   fileprivate let progress = DSGradientProgressView()
   fileprivate let headerView = UIView()
   fileprivate let reasonView = UIView()
   fileprivate let coverView = UIImageView()
-
+  
   fileprivate let initLabel = UILabel()
   fileprivate let currentLabel = UILabel()
   fileprivate let targetLabel = UILabel()
   
   fileprivate let reasonLabel = UILabel()
-
+  
+  fileprivate var sayHello = false
+  
+  fileprivate var menuWindow : MenuWindow = {
+    let swindow = MenuWindow(frame :UIScreen.main.bounds)
+    return swindow
+  }()
+  
+  
   let weightTip = PlainTextTipView(text: "Click number to update!")
   let reasonTip = PlainTextTipView(text: "Click here to update!")
   
@@ -88,7 +96,7 @@ class HomeViewController: UIViewController {
       DataContainer.shared.reason = value
       self.resetLabelValue()
       self.reasonTip.hide()
-    }, inputType: InputType.string)
+      }, inputType: InputType.string)
     
     view.addSubview(inputView)
     inputView.snp.makeConstraints { make in
@@ -105,25 +113,17 @@ class HomeViewController: UIViewController {
     
     guard DataContainer.shared.targetWeight == nil else { return }
     
-    let inputView = InputTargetView() {
-      [unowned self] targetWeight, currentWeight, reason in
-      DataContainer.shared.targetWeight = targetWeight
-      DataContainer.shared.initWeight = currentWeight
-      DataContainer.shared.currentWeight = currentWeight
-      DataContainer.shared.reason = reason
-      
-      self.resetLabelValue()
-      self.showTutorial()
-    }
+    showSetTargetView()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
     
-    view.addSubview(inputView)
-    inputView.snp.makeConstraints { make in
-      make.centerX.equalTo(view)
-      make.top.equalTo(view).offset(20)
-      make.width.equalTo(view).offset(-20)
-    }
+    guard DataContainer.shared.targetWeight != nil else { return }
+    guard !sayHello else { return }
     
-    inputView.show()
+    sayHello = true
+    showHello()
   }
   
   fileprivate func resetLabelValue() {
@@ -144,32 +144,7 @@ class HomeViewController: UIViewController {
     }
   }
   
-  func finishSport() {
-    let one = ComeonView(text: "Oh! You are the best! You finish!", type: .finishAll)
-    view.addSubview(one)
-    one.snp.makeConstraints { make in
-      make.centerY.centerX.equalTo(view)
-      make.width.height.equalTo(view)
-    }
-    one.show()
-    SoundManager.shared.playFinish()
-  }
   
-  fileprivate func showTutorial() {
-    headerView.addSubview(weightTip)
-    weightTip.snp.makeConstraints{make in
-      make.width.equalTo(110)
-      make.top.equalTo(currentLabel.snp.bottom).offset(5)
-      make.leading.equalTo(currentLabel).offset(-5)
-    }
-    
-    view.addSubview(reasonTip)
-    reasonTip.snp.makeConstraints{make in
-      make.width.equalTo(110)
-      make.top.equalTo(reasonLabel.snp.bottom).offset(5)
-      make.leading.equalTo(reasonLabel).offset(10)
-    }
-  }
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
@@ -200,6 +175,92 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController {
+  fileprivate func showHello() {
+    let iv = UIImageView()
+    iv.image = R.image.emoji_hello()
+    view.addSubview(iv)
+    
+    let fv = UIImageView()
+    fv.image = R.image.emoji_fight()
+    view.addSubview(fv)
+    
+    iv.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
+    iv.center = view.center
+    fv.frame = iv.frame
+    
+    UIView.animate(withDuration: 1, animations: {
+      iv.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+      iv.center = self.view.center
+    }, completion: { _ in
+      DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
+        iv.removeFromSuperview()
+        
+        UIView.animate(withDuration: 0.5, animations: {
+          fv.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+          fv.center = self.view.center
+        }, completion: { _ in
+          DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
+            fv.removeFromSuperview()
+          }
+        })
+      }
+    })
+  }
+  
+  func finishSport() {
+    let one = ComeonView(text: "Oh! You are the best! You finish!", type: .finishAll)
+    view.addSubview(one)
+    one.snp.makeConstraints { make in
+      make.centerY.centerX.equalTo(view)
+      make.width.height.equalTo(view)
+    }
+    one.show()
+    SoundManager.shared.playFinish()
+  }
+  
+  fileprivate func showTutorial() {
+    guard !DataContainer.shared.tipsShowedBefore else { return }
+    DataContainer.shared.tipsShowedBefore = true
+    
+    headerView.addSubview(weightTip)
+    weightTip.snp.makeConstraints{make in
+      make.width.equalTo(110)
+      make.top.equalTo(currentLabel.snp.bottom).offset(5)
+      make.leading.equalTo(currentLabel).offset(-5)
+    }
+    
+    view.addSubview(reasonTip)
+    reasonTip.snp.makeConstraints{make in
+      make.width.equalTo(110)
+      make.top.equalTo(reasonLabel.snp.bottom).offset(5)
+      make.leading.equalTo(reasonLabel).offset(10)
+    }
+  }
+  
+  fileprivate func showSetTargetView() {
+    let inputView = InputTargetView() {
+      [unowned self] targetWeight, currentWeight, reason in
+      DataContainer.shared.targetWeight = targetWeight
+      DataContainer.shared.initWeight = currentWeight
+      DataContainer.shared.currentWeight = currentWeight
+      DataContainer.shared.reason = reason
+      
+      self.resetLabelValue()
+      self.showTutorial()
+    }
+    
+    view.addSubview(inputView)
+    inputView.snp.makeConstraints { make in
+      make.centerX.equalTo(view)
+      make.top.equalTo(view).offset(20)
+      make.width.equalTo(view).offset(-20)
+    }
+    
+    inputView.show()
+  }
+}
+
+extension HomeViewController {
   fileprivate func buildBottomView() {
     let nowBtn = UIButton()
     view.addSubview(nowBtn)
@@ -217,6 +278,22 @@ extension HomeViewController {
       self.present(SportViewController(), animated: true, completion: nil)
     })
     
+    let wallPaperButton = UIButton()
+    wallPaperButton.layer.cornerRadius = 10
+    wallPaperButton.backgroundColor = DesignColor.Desire.withAlphaComponent(0.8)
+    wallPaperButton.setTitle("Select Wallpaper", for: .normal)
+    wallPaperButton.titleLabel?.font = FontType.Medium.font(size: 20)
+    view.addSubview(wallPaperButton)
+    wallPaperButton.snp.makeConstraints { make in
+      make.top.equalTo(nowBtn.snp.bottom).offset(20)
+      make.width.equalTo(220)
+      make.centerX.equalTo(view)
+      make.height.equalTo(30)
+    }
+    _ = wallPaperButton.rx.tap.subscribe(onNext: { [unowned self] obj in
+      self.present(WallPaperViewController(), animated: true, completion: nil)
+    })
+    
   }
   
   fileprivate func buildReasonView() {
@@ -232,7 +309,7 @@ extension HomeViewController {
     reasonView.layer.shadowOffset = CGSize(width: 1, height: 1)
     reasonView.layer.shadowOpacity = 0.44
     reasonView.layer.shadowRadius = 1
-
+    
     reasonLabel.font = FontType.Regular.font(size: 17)
     reasonLabel.textColor = .white
     reasonLabel.numberOfLines = 0
@@ -245,17 +322,17 @@ extension HomeViewController {
       make.bottom.equalTo(reasonView).offset(-10)
     }
   }
-
+  
   fileprivate func buildHeaderView() {
     view.addSubview(headerView)
     headerView.backgroundColor = UIColor.black.withAlphaComponent(0.25)
     headerView.layer.cornerRadius = 14
-
+    
     headerView.layer.shadowColor = UIColor.black.cgColor
     headerView.layer.shadowOffset = CGSize(width: 1, height: 1)
     headerView.layer.shadowOpacity = 0.25
     headerView.layer.shadowRadius = 1
-
+    
     headerView.snp.makeConstraints { make in
       make.trailing.equalTo(view).offset(-7)
       make.leading.equalTo(view).offset(7)
@@ -276,12 +353,23 @@ extension HomeViewController {
     menuButton.setImage(R.image.icon_menu(), for: .normal)
     headerView.addSubview(menuButton)
     menuButton.snp.makeConstraints { make in
-      make.leading.top.equalTo(headerView).offset(16)
-      make.width.equalTo(18)
-      make.height.equalTo(12)
+      make.leading.top.equalTo(headerView).offset(10)
+      make.width.equalTo(30)
+      make.height.equalTo(30)
     }
-
+    _ = menuButton.rx.tap.subscribe(onNext: { [unowned self] obj in
+      self.showMenu()
+    })
+    
     buildProgressView()
+  }
+  
+  func showMenu(){
+    menuWindow.makeKeyAndVisible()
+    menuWindow.showAnimation(nil)
+    menuWindow.setTargetCallback = { _ in
+      self.showSetTargetView()
+    }
   }
   
   fileprivate func buildProgressView() {
@@ -323,6 +411,6 @@ extension HomeViewController {
       make.top.equalTo(progress.snp.bottom).offset(9)
     }
   }
-
+  
 }
 

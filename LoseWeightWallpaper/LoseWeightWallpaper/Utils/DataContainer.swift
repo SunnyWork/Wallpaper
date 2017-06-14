@@ -40,6 +40,18 @@ class DataContainer {
     }
   }
   
+  var tipsShowedBefore: Bool {
+    set {
+         UserDefaults.standard.set(true, forKey: "tipsShowedBefore")
+     }
+    get {
+      if let v = UserDefaults.standard.object(forKey: "tipsShowedBefore")  {
+        return true
+      }
+      return false
+    }
+  }
+  
   var currentWeight: Int? {
     set {
       if let target = newValue {

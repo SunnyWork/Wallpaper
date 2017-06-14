@@ -301,7 +301,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 15 images.
+  /// This `R.image` struct is generated, and contains static references to 17 images.
   struct image {
     /// Image `bg_1`.
     static let bg_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg_1")
@@ -309,6 +309,10 @@ struct R: Rswift.Validatable {
     static let boy_do = Rswift.ImageResource(bundle: R.hostingBundle, name: "boy_do")
     /// Image `despise`.
     static let despise = Rswift.ImageResource(bundle: R.hostingBundle, name: "despise")
+    /// Image `emoji_fight`.
+    static let emoji_fight = Rswift.ImageResource(bundle: R.hostingBundle, name: "emoji_fight")
+    /// Image `emoji_hello`.
+    static let emoji_hello = Rswift.ImageResource(bundle: R.hostingBundle, name: "emoji_hello")
     /// Image `icon_close`.
     static let icon_close = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_close")
     /// Image `icon_menu`.
@@ -347,6 +351,16 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "despise", bundle: ..., traitCollection: ...)`
     static func despise(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.despise, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "emoji_fight", bundle: ..., traitCollection: ...)`
+    static func emoji_fight(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.emoji_fight, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "emoji_hello", bundle: ..., traitCollection: ...)`
+    static func emoji_hello(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.emoji_hello, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "icon_close", bundle: ..., traitCollection: ...)`

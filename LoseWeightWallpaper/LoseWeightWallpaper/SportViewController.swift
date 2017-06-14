@@ -18,6 +18,8 @@ class SportViewController: UIViewController {
   fileprivate let titleLabel = UILabel()
   fileprivate let coverView = UIImageView()
   
+  fileprivate let bgV = DisplayView()
+
   fileprivate var totTime = 0 //mins
   fileprivate var countDown = 0 //s
   fileprivate var timer: Timer?
@@ -120,7 +122,6 @@ class SportViewController: UIViewController {
     
     view.backgroundColor = UIColor.black
     
-    let bgV = DisplayView()
     view.addSubview(bgV)
     bgV.snp.makeConstraints { make in
       make.top.trailing.leading.bottom.equalTo(view)
@@ -147,6 +148,7 @@ class SportViewController: UIViewController {
     timer?.invalidate()
     timer = nil
     
+    bgV.closeDisplayTimer()
     SoundManager.shared.stop()
   }
   
@@ -155,7 +157,11 @@ class SportViewController: UIViewController {
     
     let inputView = InputTimeView(labelText: "Set Time(mins)", callback: {
       [unowned self] newTime in
-      self.totalTime = Int(newTime)!
+      if let t = Int(newTime) {
+        self.totalTime = t
+      } else {
+        self.totalTime = 30
+      }
     })
     
     view.addSubview(inputView)
