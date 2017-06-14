@@ -53,6 +53,42 @@
 		C9EBA8B61EF0D5200039FB9C /* PlainTextTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B51EF0D5200039FB9C /* PlainTextTipView.swift */; };
 		C9EBA8B81EF0F3330039FB9C /* MenuWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B71EF0F3330039FB9C /* MenuWindow.swift */; };
 		C9EBA8BA1EF10F5A0039FB9C /* WallPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8B91EF10F5A0039FB9C /* WallPaperViewController.swift */; };
+		C9EBA9051EF125A60039FB9C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8BC1EF125A60039FB9C /* BaseViewController.swift */; };
+		C9EBA9061EF125A70039FB9C /* MatterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8BE1EF125A60039FB9C /* MatterCell.swift */; };
+		C9EBA9071EF125A70039FB9C /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA8BF1EF125A60039FB9C /* data.db */; };
+		C9EBA9081EF125A70039FB9C /* EditAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8C01EF125A60039FB9C /* EditAlertViewController.swift */; };
+		C9EBA9091EF125A70039FB9C /* DBMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8C41EF125A60039FB9C /* DBMgr.m */; };
+		C9EBA90A1EF125A70039FB9C /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8C61EF125A60039FB9C /* SQLiteDB.swift */; };
+		C9EBA90B1EF125A70039FB9C /* SQliteDBMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8C71EF125A60039FB9C /* SQliteDBMgr.swift */; };
+		C9EBA90C1EF125A70039FB9C /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8C81EF125A60039FB9C /* SQLTable.swift */; };
+		C9EBA90D1EF125A70039FB9C /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8C91EF125A60039FB9C /* String-Extras.swift */; };
+		C9EBA90E1EF125A70039FB9C /* UtilHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8CB1EF125A60039FB9C /* UtilHelper.swift */; };
+		C9EBA90F1EF125A70039FB9C /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8CD1EF125A60039FB9C /* Header.swift */; };
+		C9EBA9101EF125A70039FB9C /* AlertDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8CF1EF125A60039FB9C /* AlertDataModel.swift */; };
+		C9EBA9111EF125A70039FB9C /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8D01EF125A60039FB9C /* RepeatViewController.swift */; };
+		C9EBA9121EF125A70039FB9C /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8D11EF125A60039FB9C /* TabViewController.swift */; };
+		C9EBA9131EF125A70039FB9C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8D51EF125A60039FB9C /* FMDatabase.m */; };
+		C9EBA9141EF125A70039FB9C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8D71EF125A60039FB9C /* FMDatabaseAdditions.m */; };
+		C9EBA9151EF125A70039FB9C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8D91EF125A60039FB9C /* FMDatabasePool.m */; };
+		C9EBA9161EF125A70039FB9C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8DB1EF125A60039FB9C /* FMDatabaseQueue.m */; };
+		C9EBA9171EF125A70039FB9C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8DE1EF125A60039FB9C /* FMResultSet.m */; };
+		C9EBA9181EF125A70039FB9C /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8E21EF125A60039FB9C /* IQNSArray+Sort.m */; };
+		C9EBA9191EF125A70039FB9C /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8E41EF125A60039FB9C /* IQUITextFieldView+Additions.m */; };
+		C9EBA91A1EF125A70039FB9C /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8E61EF125A60039FB9C /* IQUIView+Hierarchy.m */; };
+		C9EBA91B1EF125A70039FB9C /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8E81EF125A60039FB9C /* IQUIViewController+Additions.m */; };
+		C9EBA91C1EF125A70039FB9C /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8EA1EF125A60039FB9C /* IQUIWindow+Hierarchy.m */; };
+		C9EBA91D1EF125A70039FB9C /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8EF1EF125A60039FB9C /* IQKeyboardManager.m */; };
+		C9EBA91E1EF125A70039FB9C /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8F11EF125A60039FB9C /* IQKeyboardReturnKeyHandler.m */; };
+		C9EBA91F1EF125A70039FB9C /* IQSegmentedNextPrevious.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8F41EF125A60039FB9C /* IQSegmentedNextPrevious.m */; };
+		C9EBA9201EF125A70039FB9C /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8F71EF125A60039FB9C /* IQTextView.m */; };
+		C9EBA9211EF125A70039FB9C /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8FA1EF125A60039FB9C /* IQBarButtonItem.m */; };
+		C9EBA9221EF125A70039FB9C /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8FC1EF125A60039FB9C /* IQTitleBarButtonItem.m */; };
+		C9EBA9231EF125A70039FB9C /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA8FE1EF125A60039FB9C /* IQToolbar.m */; };
+		C9EBA9241EF125A70039FB9C /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA9001EF125A60039FB9C /* IQUIView+IQKeyboardToolbar.m */; };
+		C9EBA9251EF125A70039FB9C /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C9EBA9031EF125A60039FB9C /* IQKeyboardManager.bundle */; };
+		C9EBA9261EF125A70039FB9C /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA9041EF125A60039FB9C /* AlarmViewController.swift */; };
+		C9EBA9281EF126D70039FB9C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EBA9271EF126D70039FB9C /* libsqlite3.0.tbd */; };
+		C9EBA92A1EF126DD0039FB9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EBA9291EF126DD0039FB9C /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +143,65 @@
 		C9EBA8B51EF0D5200039FB9C /* PlainTextTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainTextTipView.swift; sourceTree = "<group>"; };
 		C9EBA8B71EF0F3330039FB9C /* MenuWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuWindow.swift; sourceTree = "<group>"; };
 		C9EBA8B91EF10F5A0039FB9C /* WallPaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallPaperViewController.swift; sourceTree = "<group>"; };
+		C9EBA8BC1EF125A60039FB9C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C9EBA8BE1EF125A60039FB9C /* MatterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterCell.swift; sourceTree = "<group>"; };
+		C9EBA8BF1EF125A60039FB9C /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
+		C9EBA8C01EF125A60039FB9C /* EditAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAlertViewController.swift; sourceTree = "<group>"; };
+		C9EBA8C31EF125A60039FB9C /* DBMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMgr.h; sourceTree = "<group>"; };
+		C9EBA8C41EF125A60039FB9C /* DBMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMgr.m; sourceTree = "<group>"; };
+		C9EBA8C61EF125A60039FB9C /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		C9EBA8C71EF125A60039FB9C /* SQliteDBMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQliteDBMgr.swift; sourceTree = "<group>"; };
+		C9EBA8C81EF125A60039FB9C /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		C9EBA8C91EF125A60039FB9C /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		C9EBA8CB1EF125A60039FB9C /* UtilHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilHelper.swift; sourceTree = "<group>"; };
+		C9EBA8CD1EF125A60039FB9C /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		C9EBA8CF1EF125A60039FB9C /* AlertDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDataModel.swift; sourceTree = "<group>"; };
+		C9EBA8D01EF125A60039FB9C /* RepeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		C9EBA8D11EF125A60039FB9C /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		C9EBA8D41EF125A60039FB9C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C9EBA8D51EF125A60039FB9C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C9EBA8D61EF125A60039FB9C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C9EBA8D71EF125A60039FB9C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C9EBA8D81EF125A60039FB9C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C9EBA8D91EF125A60039FB9C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C9EBA8DA1EF125A60039FB9C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C9EBA8DB1EF125A60039FB9C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C9EBA8DC1EF125A60039FB9C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C9EBA8DD1EF125A60039FB9C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C9EBA8DE1EF125A60039FB9C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C9EBA8E11EF125A60039FB9C /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		C9EBA8E21EF125A60039FB9C /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		C9EBA8E31EF125A60039FB9C /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		C9EBA8E41EF125A60039FB9C /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		C9EBA8E51EF125A60039FB9C /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		C9EBA8E61EF125A60039FB9C /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		C9EBA8E71EF125A60039FB9C /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		C9EBA8E81EF125A60039FB9C /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		C9EBA8E91EF125A60039FB9C /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		C9EBA8EA1EF125A60039FB9C /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		C9EBA8EC1EF125A60039FB9C /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		C9EBA8ED1EF125A60039FB9C /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		C9EBA8EE1EF125A60039FB9C /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		C9EBA8EF1EF125A60039FB9C /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		C9EBA8F01EF125A60039FB9C /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		C9EBA8F11EF125A60039FB9C /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		C9EBA8F31EF125A60039FB9C /* IQSegmentedNextPrevious.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSegmentedNextPrevious.h; sourceTree = "<group>"; };
+		C9EBA8F41EF125A60039FB9C /* IQSegmentedNextPrevious.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSegmentedNextPrevious.m; sourceTree = "<group>"; };
+		C9EBA8F61EF125A60039FB9C /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		C9EBA8F71EF125A60039FB9C /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		C9EBA8F91EF125A60039FB9C /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		C9EBA8FA1EF125A60039FB9C /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		C9EBA8FB1EF125A60039FB9C /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		C9EBA8FC1EF125A60039FB9C /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		C9EBA8FD1EF125A60039FB9C /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		C9EBA8FE1EF125A60039FB9C /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		C9EBA8FF1EF125A60039FB9C /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		C9EBA9001EF125A60039FB9C /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		C9EBA9011EF125A60039FB9C /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
+		C9EBA9031EF125A60039FB9C /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		C9EBA9041EF125A60039FB9C /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		C9EBA9271EF126D70039FB9C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C9EBA9291EF126DD0039FB9C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +209,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EBA92A1EF126DD0039FB9C /* libsqlite3.tbd in Frameworks */,
+				C9EBA9281EF126D70039FB9C /* libsqlite3.0.tbd in Frameworks */,
 				8A6EF872D3B74B5A48B5FCA1 /* Pods_LoseWeightWallpaper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +230,8 @@
 		6FEEE012C4A784A9FD737EC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9EBA9291EF126DD0039FB9C /* libsqlite3.tbd */,
+				C9EBA9271EF126D70039FB9C /* libsqlite3.0.tbd */,
 				0B5EA0DDE10A76667F31FCBD /* Pods_LoseWeightWallpaper.framework */,
 			);
 			name = Frameworks;
@@ -191,6 +290,7 @@
 		C92752C01EE3F7B60021DA06 /* LoseWeightWallpaper */ = {
 			isa = PBXGroup;
 			children = (
+				C9EBA8BB1EF125A60039FB9C /* alarmClock */,
 				C92368791EEA99F1009375E6 /* Utils */,
 				C92752C11EE3F7B60021DA06 /* AppDelegate.swift */,
 				C9C463171EED1B000051F501 /* SportViewController.swift */,
@@ -256,6 +356,198 @@
 				C9EBA8AB1EEFE5430039FB9C /* word_2.jpg */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		C9EBA8BB1EF125A60039FB9C /* alarmClock */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8BC1EF125A60039FB9C /* BaseViewController.swift */,
+				C9EBA8BD1EF125A60039FB9C /* cell */,
+				C9EBA8BF1EF125A60039FB9C /* data.db */,
+				C9EBA8C01EF125A60039FB9C /* EditAlertViewController.swift */,
+				C9EBA8C11EF125A60039FB9C /* General */,
+				C9EBA8CA1EF125A60039FB9C /* Helpers */,
+				C9EBA8CC1EF125A60039FB9C /* Macro */,
+				C9EBA8CE1EF125A60039FB9C /* Model */,
+				C9EBA8D01EF125A60039FB9C /* RepeatViewController.swift */,
+				C9EBA8D11EF125A60039FB9C /* TabViewController.swift */,
+				C9EBA8D21EF125A60039FB9C /* Vendors */,
+				C9EBA9041EF125A60039FB9C /* AlarmViewController.swift */,
+			);
+			path = alarmClock;
+			sourceTree = "<group>";
+		};
+		C9EBA8BD1EF125A60039FB9C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8BE1EF125A60039FB9C /* MatterCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		C9EBA8C11EF125A60039FB9C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8C21EF125A60039FB9C /* Database */,
+				C9EBA8C51EF125A60039FB9C /* SQLiteDB */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C9EBA8C21EF125A60039FB9C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8C31EF125A60039FB9C /* DBMgr.h */,
+				C9EBA8C41EF125A60039FB9C /* DBMgr.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		C9EBA8C51EF125A60039FB9C /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8C61EF125A60039FB9C /* SQLiteDB.swift */,
+				C9EBA8C71EF125A60039FB9C /* SQliteDBMgr.swift */,
+				C9EBA8C81EF125A60039FB9C /* SQLTable.swift */,
+				C9EBA8C91EF125A60039FB9C /* String-Extras.swift */,
+			);
+			path = SQLiteDB;
+			sourceTree = "<group>";
+		};
+		C9EBA8CA1EF125A60039FB9C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8CB1EF125A60039FB9C /* UtilHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C9EBA8CC1EF125A60039FB9C /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8CD1EF125A60039FB9C /* Header.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		C9EBA8CE1EF125A60039FB9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8CF1EF125A60039FB9C /* AlertDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9EBA8D21EF125A60039FB9C /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8D31EF125A60039FB9C /* fmdb */,
+				C9EBA8DF1EF125A60039FB9C /* IQKeyBoardManager */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		C9EBA8D31EF125A60039FB9C /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8D41EF125A60039FB9C /* FMDatabase.h */,
+				C9EBA8D51EF125A60039FB9C /* FMDatabase.m */,
+				C9EBA8D61EF125A60039FB9C /* FMDatabaseAdditions.h */,
+				C9EBA8D71EF125A60039FB9C /* FMDatabaseAdditions.m */,
+				C9EBA8D81EF125A60039FB9C /* FMDatabasePool.h */,
+				C9EBA8D91EF125A60039FB9C /* FMDatabasePool.m */,
+				C9EBA8DA1EF125A60039FB9C /* FMDatabaseQueue.h */,
+				C9EBA8DB1EF125A60039FB9C /* FMDatabaseQueue.m */,
+				C9EBA8DC1EF125A60039FB9C /* FMDB.h */,
+				C9EBA8DD1EF125A60039FB9C /* FMResultSet.h */,
+				C9EBA8DE1EF125A60039FB9C /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		C9EBA8DF1EF125A60039FB9C /* IQKeyBoardManager */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8E01EF125A60039FB9C /* Categories */,
+				C9EBA8EB1EF125A60039FB9C /* Constants */,
+				C9EBA8EE1EF125A60039FB9C /* IQKeyboardManager.h */,
+				C9EBA8EF1EF125A60039FB9C /* IQKeyboardManager.m */,
+				C9EBA8F01EF125A60039FB9C /* IQKeyboardReturnKeyHandler.h */,
+				C9EBA8F11EF125A60039FB9C /* IQKeyboardReturnKeyHandler.m */,
+				C9EBA8F21EF125A60039FB9C /* IQSegmentedNextPrevious */,
+				C9EBA8F51EF125A60039FB9C /* IQTextView */,
+				C9EBA8F81EF125A60039FB9C /* IQToolbar */,
+				C9EBA9011EF125A60039FB9C /* KeyboardManager.h */,
+				C9EBA9021EF125A60039FB9C /* Resources */,
+			);
+			path = IQKeyBoardManager;
+			sourceTree = "<group>";
+		};
+		C9EBA8E01EF125A60039FB9C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8E11EF125A60039FB9C /* IQNSArray+Sort.h */,
+				C9EBA8E21EF125A60039FB9C /* IQNSArray+Sort.m */,
+				C9EBA8E31EF125A60039FB9C /* IQUITextFieldView+Additions.h */,
+				C9EBA8E41EF125A60039FB9C /* IQUITextFieldView+Additions.m */,
+				C9EBA8E51EF125A60039FB9C /* IQUIView+Hierarchy.h */,
+				C9EBA8E61EF125A60039FB9C /* IQUIView+Hierarchy.m */,
+				C9EBA8E71EF125A60039FB9C /* IQUIViewController+Additions.h */,
+				C9EBA8E81EF125A60039FB9C /* IQUIViewController+Additions.m */,
+				C9EBA8E91EF125A60039FB9C /* IQUIWindow+Hierarchy.h */,
+				C9EBA8EA1EF125A60039FB9C /* IQUIWindow+Hierarchy.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C9EBA8EB1EF125A60039FB9C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8EC1EF125A60039FB9C /* IQKeyboardManagerConstants.h */,
+				C9EBA8ED1EF125A60039FB9C /* IQKeyboardManagerConstantsInternal.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C9EBA8F21EF125A60039FB9C /* IQSegmentedNextPrevious */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8F31EF125A60039FB9C /* IQSegmentedNextPrevious.h */,
+				C9EBA8F41EF125A60039FB9C /* IQSegmentedNextPrevious.m */,
+			);
+			path = IQSegmentedNextPrevious;
+			sourceTree = "<group>";
+		};
+		C9EBA8F51EF125A60039FB9C /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8F61EF125A60039FB9C /* IQTextView.h */,
+				C9EBA8F71EF125A60039FB9C /* IQTextView.m */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		C9EBA8F81EF125A60039FB9C /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA8F91EF125A60039FB9C /* IQBarButtonItem.h */,
+				C9EBA8FA1EF125A60039FB9C /* IQBarButtonItem.m */,
+				C9EBA8FB1EF125A60039FB9C /* IQTitleBarButtonItem.h */,
+				C9EBA8FC1EF125A60039FB9C /* IQTitleBarButtonItem.m */,
+				C9EBA8FD1EF125A60039FB9C /* IQToolbar.h */,
+				C9EBA8FE1EF125A60039FB9C /* IQToolbar.m */,
+				C9EBA8FF1EF125A60039FB9C /* IQUIView+IQKeyboardToolbar.h */,
+				C9EBA9001EF125A60039FB9C /* IQUIView+IQKeyboardToolbar.m */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		C9EBA9021EF125A60039FB9C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9EBA9031EF125A60039FB9C /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +632,8 @@
 				C9EBA8AD1EEFE5430039FB9C /* people_5.jpg in Resources */,
 				C92752DB1EE3F7FE0021DA06 /* LaunchScreen.storyboard in Resources */,
 				C923688E1EEA9CC8009375E6 /* Sanomat Grab App-Medium TH.ttf in Resources */,
+				C9EBA9251EF125A70039FB9C /* IQKeyboardManager.bundle in Resources */,
+				C9EBA9071EF125A70039FB9C /* data.db in Resources */,
 				C92368911EEA9CC8009375E6 /* Sanomat Grab App-XBold Italic.ttf in Resources */,
 				C9EBA8861EEEB92B0039FB9C /* wining.mp3 in Resources */,
 				C9EBA88A1EEEBCFB0039FB9C /* champions.mp3 in Resources */,
@@ -419,25 +713,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EBA9181EF125A70039FB9C /* IQNSArray+Sort.m in Sources */,
+				C9EBA91D1EF125A70039FB9C /* IQKeyboardManager.m in Sources */,
+				C9EBA91B1EF125A70039FB9C /* IQUIViewController+Additions.m in Sources */,
 				C9C4631E1EED2BD50051F501 /* DSGradientProgressView.swift in Sources */,
 				C92752C41EE3F7B60021DA06 /* HomeViewController.swift in Sources */,
+				C9EBA9191EF125A70039FB9C /* IQUITextFieldView+Additions.m in Sources */,
+				C9EBA91A1EF125A70039FB9C /* IQUIView+Hierarchy.m in Sources */,
+				C9EBA9111EF125A70039FB9C /* RepeatViewController.swift in Sources */,
 				C9EBA8B41EF0CA460039FB9C /* InputTargetView.swift in Sources */,
+				C9EBA9261EF125A70039FB9C /* AlarmViewController.swift in Sources */,
 				C9EBA8901EEF8E230039FB9C /* PSY3D_CircleAnimationView.m in Sources */,
+				C9EBA91C1EF125A70039FB9C /* IQUIWindow+Hierarchy.m in Sources */,
+				C9EBA90D1EF125A70039FB9C /* String-Extras.swift in Sources */,
 				C9C463181EED1B000051F501 /* SportViewController.swift in Sources */,
+				C9EBA9221EF125A70039FB9C /* IQTitleBarButtonItem.m in Sources */,
+				C9EBA91E1EF125A70039FB9C /* IQKeyboardReturnKeyHandler.m in Sources */,
+				C9EBA9051EF125A60039FB9C /* BaseViewController.swift in Sources */,
+				C9EBA9231EF125A70039FB9C /* IQToolbar.m in Sources */,
+				C9EBA9121EF125A70039FB9C /* TabViewController.swift in Sources */,
+				C9EBA9131EF125A70039FB9C /* FMDatabase.m in Sources */,
 				C923687B1EEA99F1009375E6 /* DesignColor.swift in Sources */,
 				C92752C21EE3F7B60021DA06 /* AppDelegate.swift in Sources */,
+				C9EBA9201EF125A70039FB9C /* IQTextView.m in Sources */,
+				C9EBA9091EF125A70039FB9C /* DBMgr.m in Sources */,
+				C9EBA90A1EF125A70039FB9C /* SQLiteDB.swift in Sources */,
+				C9EBA90B1EF125A70039FB9C /* SQliteDBMgr.swift in Sources */,
 				C92368941EEA9D07009375E6 /* FontType.swift in Sources */,
 				C9C4631B1EED21D10051F501 /* InputTimeView.swift in Sources */,
+				C9EBA9171EF125A70039FB9C /* FMResultSet.m in Sources */,
+				C9EBA9161EF125A70039FB9C /* FMDatabaseQueue.m in Sources */,
+				C9EBA9101EF125A70039FB9C /* AlertDataModel.swift in Sources */,
+				C9EBA9061EF125A70039FB9C /* MatterCell.swift in Sources */,
+				C9EBA9241EF125A70039FB9C /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				C923687D1EEA9A00009375E6 /* Extensions.swift in Sources */,
+				C9EBA90F1EF125A70039FB9C /* Header.swift in Sources */,
+				C9EBA9141EF125A70039FB9C /* FMDatabaseAdditions.m in Sources */,
 				C9EBA8A41EEFDD100039FB9C /* RememberView.swift in Sources */,
+				C9EBA9081EF125A70039FB9C /* EditAlertViewController.swift in Sources */,
 				C92368971EEA9E21009375E6 /* R.generated.swift in Sources */,
 				C9EBA8B81EF0F3330039FB9C /* MenuWindow.swift in Sources */,
 				C9EBA8B21EEFEB1C0039FB9C /* DataContainer.swift in Sources */,
+				C9EBA9211EF125A70039FB9C /* IQBarButtonItem.m in Sources */,
 				C9EBA8BA1EF10F5A0039FB9C /* WallPaperViewController.swift in Sources */,
 				C9EBA88C1EEF86040039FB9C /* DisplayView.swift in Sources */,
+				C9EBA91F1EF125A70039FB9C /* IQSegmentedNextPrevious.m in Sources */,
 				C9EBA8881EEEB94E0039FB9C /* SoundManager.swift in Sources */,
 				C9EBA8B61EF0D5200039FB9C /* PlainTextTipView.swift in Sources */,
+				C9EBA90E1EF125A70039FB9C /* UtilHelper.swift in Sources */,
+				C9EBA9151EF125A70039FB9C /* FMDatabasePool.m in Sources */,
 				C9EBA8841EEEB3780039FB9C /* ComeonView.swift in Sources */,
+				C9EBA90C1EF125A70039FB9C /* SQLTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

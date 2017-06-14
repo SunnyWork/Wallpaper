@@ -113,7 +113,7 @@ class HomeViewController: UIViewController {
     
     guard DataContainer.shared.targetWeight == nil else { return }
     
-    showSetTargetView()
+    showSetTargetView(closeEable: false)
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -237,7 +237,7 @@ extension HomeViewController {
     }
   }
   
-  fileprivate func showSetTargetView() {
+  fileprivate func showSetTargetView(closeEable: Bool) {
     let inputView = InputTargetView() {
       [unowned self] targetWeight, currentWeight, reason in
       DataContainer.shared.targetWeight = targetWeight
@@ -248,14 +248,13 @@ extension HomeViewController {
       self.resetLabelValue()
       self.showTutorial()
     }
-    
     view.addSubview(inputView)
     inputView.snp.makeConstraints { make in
       make.centerX.equalTo(view)
       make.top.equalTo(view).offset(20)
       make.width.equalTo(view).offset(-20)
     }
-    
+    inputView.closeEable = closeEable
     inputView.show()
   }
 }
@@ -294,6 +293,22 @@ extension HomeViewController {
       self.present(WallPaperViewController(), animated: true, completion: nil)
     })
     
+    let alarmButton = UIButton()
+    alarmButton.layer.cornerRadius = 10
+    alarmButton.backgroundColor = DesignColor.Desire.withAlphaComponent(0.8)
+    alarmButton.setTitle("Set Alarm", for: .normal)
+    alarmButton.titleLabel?.font = FontType.Medium.font(size: 20)
+    view.addSubview(alarmButton)
+    alarmButton.snp.makeConstraints { make in
+      make.top.equalTo(wallPaperButton.snp.bottom).offset(20)
+      make.width.equalTo(220)
+      make.centerX.equalTo(view)
+      make.height.equalTo(30)
+    }
+    _ = alarmButton.rx.tap.subscribe(onNext: { [unowned self] obj in
+      let nav = BaseNavigationController(rootViewController: AlarmViewController())
+      self.present(nav, animated: true, completion: nil)
+    })
   }
   
   fileprivate func buildReasonView() {
@@ -368,7 +383,7 @@ extension HomeViewController {
     menuWindow.makeKeyAndVisible()
     menuWindow.showAnimation(nil)
     menuWindow.setTargetCallback = { _ in
-      self.showSetTargetView()
+      self.showSetTargetView(closeEable: true)
     }
   }
   

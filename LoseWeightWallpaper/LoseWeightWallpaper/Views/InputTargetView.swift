@@ -14,6 +14,16 @@ import RxCocoa
 class InputTargetView: UIView {
   private let okCallback: ((Int, Int, String) -> Void)
   private var targetTF: UITextField!
+  private let closeBtn = UIButton()
+  
+  var closeEable: Bool {
+    set{
+      closeBtn.isHidden = !newValue
+    }
+    get{
+      return closeBtn.isHidden
+    }
+  }
   
   init(callback: @escaping ((Int, Int, String) -> Void)) {
     okCallback = callback
@@ -23,10 +33,22 @@ class InputTargetView: UIView {
     backgroundColor = UIColor.black.withAlphaComponent(0.9)
     layer.cornerRadius = 8
     
+    closeBtn.setImage(R.image.icon_close(), for: .normal)
+    addSubview(closeBtn)
+    closeBtn.snp.makeConstraints { make in
+      make.leading.equalTo(self).offset(5)
+      make.top.equalTo(self).offset(5)
+      make.width.equalTo(35)
+      make.height.equalTo(35)
+    }
+    _ = closeBtn.rx.tap.subscribe(onNext: { [unowned self] _ in
+      self.hide()
+    })
+
     let infoLabel = UILabel()
     targetTF = createTF()
     
-    addSubview(infoLabel)
+    insertSubview(infoLabel, belowSubview: closeBtn)
     addSubview(targetTF)
     
    

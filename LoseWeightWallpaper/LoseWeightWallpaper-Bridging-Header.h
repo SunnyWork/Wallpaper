@@ -13,3 +13,7 @@
 #endif /* LoseWeightWallpaper_Bridging_Header_h */
 
 #import "PSY3D_CircleAnimationView.h"
+#import "KeyboardManager.h"
+#import "DBMgr.h"
+#import "sqlite3.h"
+#import <time.h>

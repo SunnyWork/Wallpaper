@@ -2,20 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Sanomat Grab App-XBold.ttf</string>
-		<string>Sanomat Grab App-XBold Italic.ttf</string>
-		<string>Sanomat Grab App-Regular TH.ttf</string>
-		<string>Sanomat Grab App-Regular Italic TH.ttf</string>
-		<string>Sanomat Grab App-Medium TH.ttf</string>
-		<string>Sanomat Grab App-Medium Italic TH.ttf</string>
-		<string>Sanomat Grab App-Light TH.ttf</string>
-		<string>Sanomat Grab App-Light Italic TH.ttf</string>
-		<string>Sanomat Grab App-Bold.ttf</string>
-		<string>Sanomat Grab App-Bold Italic.ttf</string>
-		<string>Frameworks/GrabIcon_IOS.framework/GrabIcon-IOS.bundle/GrabIconDriver.ttf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -34,6 +20,22 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow access to Photos to save wallpapers.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Sanomat Grab App-XBold.ttf</string>
+		<string>Sanomat Grab App-XBold Italic.ttf</string>
+		<string>Sanomat Grab App-Regular TH.ttf</string>
+		<string>Sanomat Grab App-Regular Italic TH.ttf</string>
+		<string>Sanomat Grab App-Medium TH.ttf</string>
+		<string>Sanomat Grab App-Medium Italic TH.ttf</string>
+		<string>Sanomat Grab App-Light TH.ttf</string>
+		<string>Sanomat Grab App-Light Italic TH.ttf</string>
+		<string>Sanomat Grab App-Bold.ttf</string>
+		<string>Sanomat Grab App-Bold Italic.ttf</string>
+		<string>Frameworks/GrabIcon_IOS.framework/GrabIcon-IOS.bundle/GrabIconDriver.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

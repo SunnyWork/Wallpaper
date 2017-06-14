@@ -97,7 +97,7 @@ class WallPaperViewController: UIViewController {
     })
     
     let titleLabel = UILabel()
-    titleLabel.text = "swipe to see more, click save to iPhone"
+    titleLabel.text = "swipe see more, click save"
     titleLabel.font = FontType.Regular.font(size: 20)
     titleLabel.textColor = .white
     view.addSubview(titleLabel)
@@ -113,7 +113,12 @@ class WallPaperViewController: UIViewController {
   }
   
   func didSelectImage(_ image: UIImage) {
+   UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
     
+    let alert = UIAlertController(title: "Completed", message: "Image has been saved!", preferredStyle: .alert)
+    let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+    alert.addAction(action)
+    self.present(alert, animated: true, completion: nil)
   }
   
 }

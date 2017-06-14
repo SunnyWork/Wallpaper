@@ -22,8 +22,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 23 files.
+  /// This `R.file` struct is generated, and contains static references to 25 files.
   struct file {
+    /// Resource file `IQKeyboardManager.bundle`.
+    static let iQKeyboardManagerBundle = Rswift.FileResource(bundle: R.hostingBundle, name: "IQKeyboardManager", pathExtension: "bundle")
     /// Resource file `Info.plist`.
     static let infoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "Info", pathExtension: "plist")
     /// Resource file `Sanomat Grab App-Bold Italic.ttf`.
@@ -48,6 +50,8 @@ struct R: Rswift.Validatable {
     static let sanomatGrabAppXBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Sanomat Grab App-XBold", pathExtension: "ttf")
     /// Resource file `champions.mp3`.
     static let championsMp3 = Rswift.FileResource(bundle: R.hostingBundle, name: "champions", pathExtension: "mp3")
+    /// Resource file `data.db`.
+    static let dataDb = Rswift.FileResource(bundle: R.hostingBundle, name: "data", pathExtension: "db")
     /// Resource file `keep.mp3`.
     static let keepMp3 = Rswift.FileResource(bundle: R.hostingBundle, name: "keep", pathExtension: "mp3")
     /// Resource file `people_1.jpg`.
@@ -70,6 +74,12 @@ struct R: Rswift.Validatable {
     static let word_1Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "word_1", pathExtension: "jpg")
     /// Resource file `word_2.jpg`.
     static let word_2Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "word_2", pathExtension: "jpg")
+    
+    /// `bundle.url(forResource: "IQKeyboardManager", withExtension: "bundle")`
+    static func iQKeyboardManagerBundle(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.iQKeyboardManagerBundle
+      return fileResource.bundle.url(forResource: fileResource)
+    }
     
     /// `bundle.url(forResource: "Info", withExtension: "plist")`
     static func infoPlist(_: Void = ()) -> Foundation.URL? {
@@ -140,6 +150,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "champions", withExtension: "mp3")`
     static func championsMp3(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.championsMp3
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "data", withExtension: "db")`
+    static func dataDb(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.dataDb
       return fileResource.bundle.url(forResource: fileResource)
     }
     
@@ -301,7 +317,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 17 images.
+  /// This `R.image` struct is generated, and contains static references to 19 images.
   struct image {
     /// Image `bg_1`.
     static let bg_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg_1")
@@ -317,6 +333,10 @@ struct R: Rswift.Validatable {
     static let icon_close = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_close")
     /// Image `icon_menu`.
     static let icon_menu = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_menu")
+    /// Image `more`.
+    static let more = Rswift.ImageResource(bundle: R.hostingBundle, name: "more")
+    /// Image `navBar_back`.
+    static let navBar_back = Rswift.ImageResource(bundle: R.hostingBundle, name: "navBar_back")
     /// Image `people_1.jpg`.
     static let people_1Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "people_1.jpg")
     /// Image `people_2.jpg`.
@@ -371,6 +391,16 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "icon_menu", bundle: ..., traitCollection: ...)`
     static func icon_menu(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.icon_menu, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "more", bundle: ..., traitCollection: ...)`
+    static func more(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.more, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "navBar_back", bundle: ..., traitCollection: ...)`
+    static func navBar_back(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.navBar_back, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "people_1.jpg", bundle: ..., traitCollection: ...)`
