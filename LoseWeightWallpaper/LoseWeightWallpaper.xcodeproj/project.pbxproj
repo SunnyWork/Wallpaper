@@ -90,6 +90,7 @@
 		C9EBA9281EF126D70039FB9C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EBA9271EF126D70039FB9C /* libsqlite3.0.tbd */; };
 		C9EBA92A1EF126DD0039FB9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EBA9291EF126DD0039FB9C /* libsqlite3.tbd */; };
 		C9EBA92C1EF1483F0039FB9C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA92B1EF1483F0039FB9C /* UIViewExtension.swift */; };
+		C9EBA92E1EF14CFA0039FB9C /* AdBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA92D1EF14CFA0039FB9C /* AdBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +205,7 @@
 		C9EBA9271EF126D70039FB9C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		C9EBA9291EF126DD0039FB9C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C9EBA92B1EF1483F0039FB9C /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		C9EBA92D1EF14CFA0039FB9C /* AdBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +301,7 @@
 				C9C463171EED1B000051F501 /* SportViewController.swift */,
 				C92752C31EE3F7B60021DA06 /* HomeViewController.swift */,
 				C9EBA8B91EF10F5A0039FB9C /* WallPaperViewController.swift */,
+				C9EBA92D1EF14CFA0039FB9C /* AdBaseViewController.swift */,
 				C9EBA8B71EF0F3330039FB9C /* MenuWindow.swift */,
 				C9EBA88D1EEF8E230039FB9C /* 3DAnimationView */,
 				C9C463191EED21C20051F501 /* Views */,
@@ -763,6 +766,7 @@
 				C9EBA88C1EEF86040039FB9C /* DisplayView.swift in Sources */,
 				C9EBA91F1EF125A70039FB9C /* IQSegmentedNextPrevious.m in Sources */,
 				C9EBA8881EEEB94E0039FB9C /* SoundManager.swift in Sources */,
+				C9EBA92E1EF14CFA0039FB9C /* AdBaseViewController.swift in Sources */,
 				C9EBA8B61EF0D5200039FB9C /* PlainTextTipView.swift in Sources */,
 				C9EBA90E1EF125A70039FB9C /* UtilHelper.swift in Sources */,
 				C9EBA9151EF125A70039FB9C /* FMDatabasePool.m in Sources */,

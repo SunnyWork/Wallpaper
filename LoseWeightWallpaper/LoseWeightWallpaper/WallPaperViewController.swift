@@ -57,7 +57,7 @@ class PaperListView: UIView, ClickImgDelegate {
   }
 }
 
-class WallPaperViewController: UIViewController {
+class WallPaperViewController: AdBaseViewController {
   
   func closeAction() {
     self.dismiss(animated: true, completion: nil)

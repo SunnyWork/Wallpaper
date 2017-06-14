@@ -9,6 +9,9 @@
 import UIKit
 import GoogleMobileAds
 
+
+let adUit = "ca-app-pub-6721599971147940/2743298711"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

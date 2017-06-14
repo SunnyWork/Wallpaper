@@ -10,11 +10,9 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
-import GoogleMobileAds
 
 
-class HomeViewController: UIViewController {
-  var bannerView: GADBannerView!
+class HomeViewController: AdBaseViewController {
   
   fileprivate let disposeBag = DisposeBag()
   
@@ -73,16 +71,6 @@ class HomeViewController: UIViewController {
     tapG.rx.event.subscribe(onNext: { [unowned self] _ in
       self.updateReason()
     }).addDisposableTo(self.disposeBag)
-    
-    
-    bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-    self.view.addSubview(bannerView)
-    bannerView.bottomToSuper = 0
-    bannerView.adUnitID = "ca-app-pub-6721599971147940/2743298711"
-    bannerView.rootViewController = self
-    let request = GADRequest()
-    request.testDevices = [ kGADSimulatorID, "39fb59212590926492a7b138effe9578" ];
-    bannerView.load(request)
     
   }
   

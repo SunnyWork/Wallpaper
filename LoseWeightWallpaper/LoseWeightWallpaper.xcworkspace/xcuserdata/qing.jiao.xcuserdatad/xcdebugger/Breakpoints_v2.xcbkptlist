@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoseWeightWallpaper/HomeViewController.swift"
-            timestampString = "519129494.067664"
+            timestampString = "519130522.940779"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "resetProgressBar()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoseWeightWallpaper/HomeViewController.swift"
-            timestampString = "519129494.067664"
+            timestampString = "519130522.940779"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "resetProgressBar()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoseWeightWallpaper/HomeViewController.swift"
-            timestampString = "519129494.067664"
+            timestampString = "519130522.940779"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "resetLabelValue()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoseWeightWallpaper/HomeViewController.swift"
-            timestampString = "519129494.067664"
+            timestampString = "519130522.940779"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "updateReason()"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoseWeightWallpaper/HomeViewController.swift"
-            timestampString = "519130072.088951"
+            timestampString = "519130522.940779"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "409"
-            endingLineNumber = "409"
+            startingLineNumber = "397"
+            endingLineNumber = "397"
             landmarkName = "showMenu()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoseWeightWallpaper/HomeViewController.swift"
-            timestampString = "519129494.067664"
+            timestampString = "519130522.940779"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "266"
-            endingLineNumber = "266"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
             landmarkName = "showSetTargetView(closeEable:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoseWeightWallpaper/HomeViewController.swift"
-            timestampString = "519129494.067664"
+            timestampString = "519130522.940779"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "272"
-            endingLineNumber = "272"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
             landmarkName = "showSetTargetView(closeEable:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -12,7 +12,7 @@ import RxSwift
 import RxCocoa
 
 
-class SportViewController: UIViewController {
+class SportViewController: AdBaseViewController {
   fileprivate let headerView = UIView()
   fileprivate let reasonView = UIView()
   fileprivate let titleLabel = UILabel()

@@ -14,7 +14,7 @@ class BaseNavigationController: UINavigationController {
   }
 }
 
-class BaseViewController: UIViewController {
+class BaseViewController: AdBaseViewController {
     
     open var btnLeft : UIButton?
     open var btnRight : UIButton?
