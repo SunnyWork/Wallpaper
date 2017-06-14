@@ -10,5 +10,5 @@ pod 'SnapKit'      		 , '~> 3.2.0'
 pod 'R.swift'              , '3.2.0'
 pod 'RxSwift', '~> 3.2.0'
 pod 'RxCocoa', '~> 3.2.0'
-
+pod 'Google-Mobile-Ads-SDK'
 end

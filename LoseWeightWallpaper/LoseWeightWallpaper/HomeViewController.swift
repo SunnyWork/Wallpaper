@@ -10,8 +10,12 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import GoogleMobileAds
+
 
 class HomeViewController: UIViewController {
+  var bannerView: GADBannerView!
+  
   fileprivate let disposeBag = DisposeBag()
   
   fileprivate let progress = DSGradientProgressView()
@@ -69,6 +73,17 @@ class HomeViewController: UIViewController {
     tapG.rx.event.subscribe(onNext: { [unowned self] _ in
       self.updateReason()
     }).addDisposableTo(self.disposeBag)
+    
+    
+    bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+    self.view.addSubview(bannerView)
+    bannerView.bottomToSuper = 0
+    bannerView.adUnitID = "ca-app-pub-6721599971147940/2743298711"
+    bannerView.rootViewController = self
+    let request = GADRequest()
+    request.testDevices = [ kGADSimulatorID, "39fb59212590926492a7b138effe9578" ];
+    bannerView.load(request)
+    
   }
   
   fileprivate func updateCurrentView() {
@@ -261,16 +276,27 @@ extension HomeViewController {
 
 extension HomeViewController {
   fileprivate func buildBottomView() {
+    var btnWidth: CGFloat = 150
+    if view.frame.size.width < 375 {
+      btnWidth = 100
+    }
+    
     let nowBtn = UIButton()
     view.addSubview(nowBtn)
-    nowBtn.layer.cornerRadius = 75
+    nowBtn.layer.cornerRadius = btnWidth / 2
     nowBtn.backgroundColor = DesignColor.Desire.withAlphaComponent(0.8)
     nowBtn.setTitle("Do it now!", for: .normal)
     nowBtn.titleLabel?.font = FontType.Medium.font(size: 20)
+    var offSet: CGFloat = 130
+    if view.frame.size.width < 375 {
+      offSet = 10
+    } else if view.frame.size.width < 414 {
+      offSet = 60
+    }
     nowBtn.snp.makeConstraints { make in
       make.centerX.equalTo(view)
-      make.top.equalTo(reasonView.snp.bottom).offset(140)
-      make.height.width.equalTo(150)
+      make.top.equalTo(reasonView.snp.bottom).offset(offSet)
+      make.height.width.equalTo(btnWidth)
     }
     
     _ = nowBtn.rx.tap.subscribe(onNext: { [unowned self] obj in

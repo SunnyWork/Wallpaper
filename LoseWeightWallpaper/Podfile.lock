@@ -1,4 +1,5 @@
 PODS:
+  - Google-Mobile-Ads-SDK (7.20.0)
   - R.swift (3.2.0):
     - R.swift.Library (~> 3.0.2)
   - R.swift.Library (3.0.2)
@@ -8,18 +9,20 @@ PODS:
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
   - R.swift (= 3.2.0)
   - RxCocoa (~> 3.2.0)
   - RxSwift (~> 3.2.0)
   - SnapKit (~> 3.2.0)
 
 SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: 168312cdc167fa22746d4ea8e839fc4825dd2966
   R.swift: 207a372a2b5977caef440c696a368009460641d1
   R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
   RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: 579f7696d8b20dd6656809723c172e7aaef3b751
+PODFILE CHECKSUM: 1677b4f6aacab31bdf34b03319c10f4690245b25
 
 COCOAPODS: 1.2.0

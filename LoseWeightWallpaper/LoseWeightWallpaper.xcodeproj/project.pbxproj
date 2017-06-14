@@ -89,6 +89,7 @@
 		C9EBA9261EF125A70039FB9C /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA9041EF125A60039FB9C /* AlarmViewController.swift */; };
 		C9EBA9281EF126D70039FB9C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EBA9271EF126D70039FB9C /* libsqlite3.0.tbd */; };
 		C9EBA92A1EF126DD0039FB9C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EBA9291EF126DD0039FB9C /* libsqlite3.tbd */; };
+		C9EBA92C1EF1483F0039FB9C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EBA92B1EF1483F0039FB9C /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -202,6 +203,7 @@
 		C9EBA9041EF125A60039FB9C /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		C9EBA9271EF126D70039FB9C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		C9EBA9291EF126DD0039FB9C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C9EBA92B1EF1483F0039FB9C /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 		C92368791EEA99F1009375E6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C9EBA92B1EF1483F0039FB9C /* UIViewExtension.swift */,
 				C9C4631D1EED2BD50051F501 /* DSGradientProgressView.swift */,
 				C92368931EEA9D07009375E6 /* FontType.swift */,
 				C9EBA8871EEEB94E0039FB9C /* SoundManager.swift */,
@@ -735,6 +738,7 @@
 				C9EBA9131EF125A70039FB9C /* FMDatabase.m in Sources */,
 				C923687B1EEA99F1009375E6 /* DesignColor.swift in Sources */,
 				C92752C21EE3F7B60021DA06 /* AppDelegate.swift in Sources */,
+				C9EBA92C1EF1483F0039FB9C /* UIViewExtension.swift in Sources */,
 				C9EBA9201EF125A70039FB9C /* IQTextView.m in Sources */,
 				C9EBA9091EF125A70039FB9C /* DBMgr.m in Sources */,
 				C9EBA90A1EF125A70039FB9C /* SQLiteDB.swift in Sources */,
