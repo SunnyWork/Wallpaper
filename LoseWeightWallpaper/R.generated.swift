@@ -22,7 +22,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 25 files.
+  /// This `R.file` struct is generated, and contains static references to 105 files.
   struct file {
     /// Resource file `IQKeyboardManager.bundle`.
     static let iQKeyboardManagerBundle = Rswift.FileResource(bundle: R.hostingBundle, name: "IQKeyboardManager", pathExtension: "bundle")
@@ -52,28 +52,188 @@ struct R: Rswift.Validatable {
     static let championsMp3 = Rswift.FileResource(bundle: R.hostingBundle, name: "champions", pathExtension: "mp3")
     /// Resource file `data.db`.
     static let dataDb = Rswift.FileResource(bundle: R.hostingBundle, name: "data", pathExtension: "db")
+    /// Resource file `image1.jpg`.
+    static let image1Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image1", pathExtension: "jpg")
+    /// Resource file `image10.jpg`.
+    static let image10Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image10", pathExtension: "jpg")
+    /// Resource file `image11.jpg`.
+    static let image11Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image11", pathExtension: "jpg")
+    /// Resource file `image12.jpg`.
+    static let image12Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image12", pathExtension: "jpg")
+    /// Resource file `image13.jpg`.
+    static let image13Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image13", pathExtension: "jpg")
+    /// Resource file `image14.jpg`.
+    static let image14Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image14", pathExtension: "jpg")
+    /// Resource file `image15.jpg`.
+    static let image15Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image15", pathExtension: "jpg")
+    /// Resource file `image16.jpg`.
+    static let image16Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image16", pathExtension: "jpg")
+    /// Resource file `image17.jpg`.
+    static let image17Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image17", pathExtension: "jpg")
+    /// Resource file `image18.jpg`.
+    static let image18Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image18", pathExtension: "jpg")
+    /// Resource file `image19.jpg`.
+    static let image19Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image19", pathExtension: "jpg")
+    /// Resource file `image2.jpg`.
+    static let image2Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image2", pathExtension: "jpg")
+    /// Resource file `image20.jpg`.
+    static let image20Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image20", pathExtension: "jpg")
+    /// Resource file `image21.jpg`.
+    static let image21Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image21", pathExtension: "jpg")
+    /// Resource file `image22.jpg`.
+    static let image22Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image22", pathExtension: "jpg")
+    /// Resource file `image23.jpg`.
+    static let image23Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image23", pathExtension: "jpg")
+    /// Resource file `image24.jpg`.
+    static let image24Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image24", pathExtension: "jpg")
+    /// Resource file `image25.jpg`.
+    static let image25Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image25", pathExtension: "jpg")
+    /// Resource file `image26.jpg`.
+    static let image26Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image26", pathExtension: "jpg")
+    /// Resource file `image27.jpg`.
+    static let image27Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image27", pathExtension: "jpg")
+    /// Resource file `image28.jpg`.
+    static let image28Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image28", pathExtension: "jpg")
+    /// Resource file `image29.jpg`.
+    static let image29Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image29", pathExtension: "jpg")
+    /// Resource file `image3.jpg`.
+    static let image3Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image3", pathExtension: "jpg")
+    /// Resource file `image30.jpg`.
+    static let image30Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image30", pathExtension: "jpg")
+    /// Resource file `image31.jpg`.
+    static let image31Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image31", pathExtension: "jpg")
+    /// Resource file `image32.jpg`.
+    static let image32Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image32", pathExtension: "jpg")
+    /// Resource file `image33.jpg`.
+    static let image33Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image33", pathExtension: "jpg")
+    /// Resource file `image34.jpg`.
+    static let image34Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image34", pathExtension: "jpg")
+    /// Resource file `image35.jpg`.
+    static let image35Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image35", pathExtension: "jpg")
+    /// Resource file `image36.jpg`.
+    static let image36Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image36", pathExtension: "jpg")
+    /// Resource file `image37.jpg`.
+    static let image37Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image37", pathExtension: "jpg")
+    /// Resource file `image38.jpg`.
+    static let image38Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image38", pathExtension: "jpg")
+    /// Resource file `image39.jpg`.
+    static let image39Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image39", pathExtension: "jpg")
+    /// Resource file `image4.jpg`.
+    static let image4Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image4", pathExtension: "jpg")
+    /// Resource file `image40.jpg`.
+    static let image40Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image40", pathExtension: "jpg")
+    /// Resource file `image41.jpg`.
+    static let image41Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image41", pathExtension: "jpg")
+    /// Resource file `image42.jpg`.
+    static let image42Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image42", pathExtension: "jpg")
+    /// Resource file `image43.jpg`.
+    static let image43Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image43", pathExtension: "jpg")
+    /// Resource file `image44.jpg`.
+    static let image44Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image44", pathExtension: "jpg")
+    /// Resource file `image45.jpg`.
+    static let image45Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image45", pathExtension: "jpg")
+    /// Resource file `image46.jpg`.
+    static let image46Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image46", pathExtension: "jpg")
+    /// Resource file `image47.jpg`.
+    static let image47Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image47", pathExtension: "jpg")
+    /// Resource file `image48.jpg`.
+    static let image48Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image48", pathExtension: "jpg")
+    /// Resource file `image49.jpg`.
+    static let image49Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image49", pathExtension: "jpg")
+    /// Resource file `image5.jpg`.
+    static let image5Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image5", pathExtension: "jpg")
+    /// Resource file `image50.jpg`.
+    static let image50Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image50", pathExtension: "jpg")
+    /// Resource file `image51.jpg`.
+    static let image51Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image51", pathExtension: "jpg")
+    /// Resource file `image52.jpg`.
+    static let image52Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image52", pathExtension: "jpg")
+    /// Resource file `image53.jpg`.
+    static let image53Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image53", pathExtension: "jpg")
+    /// Resource file `image54.jpg`.
+    static let image54Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image54", pathExtension: "jpg")
+    /// Resource file `image55.jpg`.
+    static let image55Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image55", pathExtension: "jpg")
+    /// Resource file `image56.jpg`.
+    static let image56Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image56", pathExtension: "jpg")
+    /// Resource file `image57.jpg`.
+    static let image57Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image57", pathExtension: "jpg")
+    /// Resource file `image58.jpg`.
+    static let image58Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image58", pathExtension: "jpg")
+    /// Resource file `image59.jpg`.
+    static let image59Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image59", pathExtension: "jpg")
+    /// Resource file `image6.jpg`.
+    static let image6Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image6", pathExtension: "jpg")
+    /// Resource file `image60.jpg`.
+    static let image60Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image60", pathExtension: "jpg")
+    /// Resource file `image61.jpg`.
+    static let image61Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image61", pathExtension: "jpg")
+    /// Resource file `image62.jpg`.
+    static let image62Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image62", pathExtension: "jpg")
+    /// Resource file `image63.jpg`.
+    static let image63Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image63", pathExtension: "jpg")
+    /// Resource file `image64.jpg`.
+    static let image64Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image64", pathExtension: "jpg")
+    /// Resource file `image65.jpg`.
+    static let image65Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image65", pathExtension: "jpg")
+    /// Resource file `image66.jpg`.
+    static let image66Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image66", pathExtension: "jpg")
+    /// Resource file `image67.jpg`.
+    static let image67Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image67", pathExtension: "jpg")
+    /// Resource file `image68.jpg`.
+    static let image68Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image68", pathExtension: "jpg")
+    /// Resource file `image69.jpg`.
+    static let image69Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image69", pathExtension: "jpg")
+    /// Resource file `image7.jpg`.
+    static let image7Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image7", pathExtension: "jpg")
+    /// Resource file `image70.jpg`.
+    static let image70Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image70", pathExtension: "jpg")
+    /// Resource file `image71.jpg`.
+    static let image71Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image71", pathExtension: "jpg")
+    /// Resource file `image72.jpg`.
+    static let image72Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image72", pathExtension: "jpg")
+    /// Resource file `image73.jpg`.
+    static let image73Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image73", pathExtension: "jpg")
+    /// Resource file `image74.jpg`.
+    static let image74Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image74", pathExtension: "jpg")
+    /// Resource file `image75.jpg`.
+    static let image75Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image75", pathExtension: "jpg")
+    /// Resource file `image76.jpg`.
+    static let image76Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image76", pathExtension: "jpg")
+    /// Resource file `image77.jpg`.
+    static let image77Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image77", pathExtension: "jpg")
+    /// Resource file `image78.jpg`.
+    static let image78Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image78", pathExtension: "jpg")
+    /// Resource file `image79.jpg`.
+    static let image79Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image79", pathExtension: "jpg")
+    /// Resource file `image8.jpg`.
+    static let image8Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image8", pathExtension: "jpg")
+    /// Resource file `image80.jpg`.
+    static let image80Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image80", pathExtension: "jpg")
+    /// Resource file `image81.jpg`.
+    static let image81Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image81", pathExtension: "jpg")
+    /// Resource file `image82.jpg`.
+    static let image82Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image82", pathExtension: "jpg")
+    /// Resource file `image83.jpg`.
+    static let image83Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image83", pathExtension: "jpg")
+    /// Resource file `image84.jpg`.
+    static let image84Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image84", pathExtension: "jpg")
+    /// Resource file `image85.jpg`.
+    static let image85Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image85", pathExtension: "jpg")
+    /// Resource file `image86.jpg`.
+    static let image86Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image86", pathExtension: "jpg")
+    /// Resource file `image87.jpg`.
+    static let image87Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image87", pathExtension: "jpg")
+    /// Resource file `image88.jpg`.
+    static let image88Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image88", pathExtension: "jpg")
+    /// Resource file `image89.jpg`.
+    static let image89Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image89", pathExtension: "jpg")
+    /// Resource file `image9.jpg`.
+    static let image9Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image9", pathExtension: "jpg")
     /// Resource file `keep.mp3`.
     static let keepMp3 = Rswift.FileResource(bundle: R.hostingBundle, name: "keep", pathExtension: "mp3")
-    /// Resource file `people_1.jpg`.
-    static let people_1Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "people_1", pathExtension: "jpg")
-    /// Resource file `people_2.jpg`.
-    static let people_2Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "people_2", pathExtension: "jpg")
-    /// Resource file `people_3.jpg`.
-    static let people_3Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "people_3", pathExtension: "jpg")
-    /// Resource file `people_4.jpg`.
-    static let people_4Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "people_4", pathExtension: "jpg")
-    /// Resource file `people_5.jpg`.
-    static let people_5Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "people_5", pathExtension: "jpg")
-    /// Resource file `people_6.jpg`.
-    static let people_6Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "people_6", pathExtension: "jpg")
-    /// Resource file `people_7.jpg`.
-    static let people_7Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "people_7", pathExtension: "jpg")
     /// Resource file `wining.mp3`.
     static let winingMp3 = Rswift.FileResource(bundle: R.hostingBundle, name: "wining", pathExtension: "mp3")
-    /// Resource file `word_1.jpg`.
-    static let word_1Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "word_1", pathExtension: "jpg")
-    /// Resource file `word_2.jpg`.
-    static let word_2Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "word_2", pathExtension: "jpg")
     
     /// `bundle.url(forResource: "IQKeyboardManager", withExtension: "bundle")`
     static func iQKeyboardManagerBundle(_: Void = ()) -> Foundation.URL? {
@@ -159,69 +319,549 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
     
+    /// `bundle.url(forResource: "image1", withExtension: "jpg")`
+    static func image1Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image1Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image10", withExtension: "jpg")`
+    static func image10Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image10Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image11", withExtension: "jpg")`
+    static func image11Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image11Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image12", withExtension: "jpg")`
+    static func image12Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image12Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image13", withExtension: "jpg")`
+    static func image13Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image13Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image14", withExtension: "jpg")`
+    static func image14Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image14Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image15", withExtension: "jpg")`
+    static func image15Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image15Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image16", withExtension: "jpg")`
+    static func image16Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image16Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image17", withExtension: "jpg")`
+    static func image17Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image17Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image18", withExtension: "jpg")`
+    static func image18Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image18Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image19", withExtension: "jpg")`
+    static func image19Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image19Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image2", withExtension: "jpg")`
+    static func image2Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image2Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image20", withExtension: "jpg")`
+    static func image20Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image20Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image21", withExtension: "jpg")`
+    static func image21Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image21Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image22", withExtension: "jpg")`
+    static func image22Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image22Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image23", withExtension: "jpg")`
+    static func image23Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image23Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image24", withExtension: "jpg")`
+    static func image24Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image24Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image25", withExtension: "jpg")`
+    static func image25Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image25Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image26", withExtension: "jpg")`
+    static func image26Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image26Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image27", withExtension: "jpg")`
+    static func image27Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image27Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image28", withExtension: "jpg")`
+    static func image28Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image28Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image29", withExtension: "jpg")`
+    static func image29Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image29Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image3", withExtension: "jpg")`
+    static func image3Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image3Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image30", withExtension: "jpg")`
+    static func image30Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image30Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image31", withExtension: "jpg")`
+    static func image31Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image31Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image32", withExtension: "jpg")`
+    static func image32Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image32Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image33", withExtension: "jpg")`
+    static func image33Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image33Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image34", withExtension: "jpg")`
+    static func image34Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image34Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image35", withExtension: "jpg")`
+    static func image35Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image35Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image36", withExtension: "jpg")`
+    static func image36Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image36Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image37", withExtension: "jpg")`
+    static func image37Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image37Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image38", withExtension: "jpg")`
+    static func image38Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image38Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image39", withExtension: "jpg")`
+    static func image39Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image39Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image4", withExtension: "jpg")`
+    static func image4Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image4Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image40", withExtension: "jpg")`
+    static func image40Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image40Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image41", withExtension: "jpg")`
+    static func image41Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image41Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image42", withExtension: "jpg")`
+    static func image42Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image42Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image43", withExtension: "jpg")`
+    static func image43Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image43Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image44", withExtension: "jpg")`
+    static func image44Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image44Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image45", withExtension: "jpg")`
+    static func image45Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image45Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image46", withExtension: "jpg")`
+    static func image46Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image46Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image47", withExtension: "jpg")`
+    static func image47Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image47Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image48", withExtension: "jpg")`
+    static func image48Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image48Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image49", withExtension: "jpg")`
+    static func image49Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image49Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image5", withExtension: "jpg")`
+    static func image5Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image5Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image50", withExtension: "jpg")`
+    static func image50Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image50Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image51", withExtension: "jpg")`
+    static func image51Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image51Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image52", withExtension: "jpg")`
+    static func image52Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image52Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image53", withExtension: "jpg")`
+    static func image53Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image53Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image54", withExtension: "jpg")`
+    static func image54Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image54Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image55", withExtension: "jpg")`
+    static func image55Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image55Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image56", withExtension: "jpg")`
+    static func image56Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image56Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image57", withExtension: "jpg")`
+    static func image57Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image57Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image58", withExtension: "jpg")`
+    static func image58Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image58Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image59", withExtension: "jpg")`
+    static func image59Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image59Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image6", withExtension: "jpg")`
+    static func image6Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image6Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image60", withExtension: "jpg")`
+    static func image60Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image60Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image61", withExtension: "jpg")`
+    static func image61Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image61Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image62", withExtension: "jpg")`
+    static func image62Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image62Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image63", withExtension: "jpg")`
+    static func image63Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image63Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image64", withExtension: "jpg")`
+    static func image64Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image64Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image65", withExtension: "jpg")`
+    static func image65Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image65Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image66", withExtension: "jpg")`
+    static func image66Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image66Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image67", withExtension: "jpg")`
+    static func image67Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image67Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image68", withExtension: "jpg")`
+    static func image68Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image68Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image69", withExtension: "jpg")`
+    static func image69Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image69Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image7", withExtension: "jpg")`
+    static func image7Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image7Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image70", withExtension: "jpg")`
+    static func image70Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image70Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image71", withExtension: "jpg")`
+    static func image71Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image71Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image72", withExtension: "jpg")`
+    static func image72Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image72Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image73", withExtension: "jpg")`
+    static func image73Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image73Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image74", withExtension: "jpg")`
+    static func image74Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image74Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image75", withExtension: "jpg")`
+    static func image75Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image75Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image76", withExtension: "jpg")`
+    static func image76Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image76Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image77", withExtension: "jpg")`
+    static func image77Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image77Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image78", withExtension: "jpg")`
+    static func image78Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image78Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image79", withExtension: "jpg")`
+    static func image79Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image79Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image8", withExtension: "jpg")`
+    static func image8Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image8Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image80", withExtension: "jpg")`
+    static func image80Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image80Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image81", withExtension: "jpg")`
+    static func image81Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image81Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image82", withExtension: "jpg")`
+    static func image82Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image82Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image83", withExtension: "jpg")`
+    static func image83Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image83Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image84", withExtension: "jpg")`
+    static func image84Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image84Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image85", withExtension: "jpg")`
+    static func image85Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image85Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image86", withExtension: "jpg")`
+    static func image86Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image86Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image87", withExtension: "jpg")`
+    static func image87Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image87Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image88", withExtension: "jpg")`
+    static func image88Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image88Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image89", withExtension: "jpg")`
+    static func image89Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image89Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "image9", withExtension: "jpg")`
+    static func image9Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image9Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     /// `bundle.url(forResource: "keep", withExtension: "mp3")`
     static func keepMp3(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.keepMp3
       return fileResource.bundle.url(forResource: fileResource)
     }
     
-    /// `bundle.url(forResource: "people_1", withExtension: "jpg")`
-    static func people_1Jpg(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.people_1Jpg
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "people_2", withExtension: "jpg")`
-    static func people_2Jpg(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.people_2Jpg
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "people_3", withExtension: "jpg")`
-    static func people_3Jpg(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.people_3Jpg
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "people_4", withExtension: "jpg")`
-    static func people_4Jpg(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.people_4Jpg
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "people_5", withExtension: "jpg")`
-    static func people_5Jpg(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.people_5Jpg
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "people_6", withExtension: "jpg")`
-    static func people_6Jpg(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.people_6Jpg
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "people_7", withExtension: "jpg")`
-    static func people_7Jpg(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.people_7Jpg
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
     /// `bundle.url(forResource: "wining", withExtension: "mp3")`
     static func winingMp3(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.winingMp3
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "word_1", withExtension: "jpg")`
-    static func word_1Jpg(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.word_1Jpg
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "word_2", withExtension: "jpg")`
-    static func word_2Jpg(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.word_2Jpg
       return fileResource.bundle.url(forResource: fileResource)
     }
     
@@ -317,7 +957,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 19 images.
+  /// This `R.image` struct is generated, and contains static references to 98 images.
   struct image {
     /// Image `bg_1`.
     static let bg_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg_1")
@@ -327,36 +967,194 @@ struct R: Rswift.Validatable {
     static let despise = Rswift.ImageResource(bundle: R.hostingBundle, name: "despise")
     /// Image `emoji_fight`.
     static let emoji_fight = Rswift.ImageResource(bundle: R.hostingBundle, name: "emoji_fight")
-    /// Image `emoji_hello`.
-    static let emoji_hello = Rswift.ImageResource(bundle: R.hostingBundle, name: "emoji_hello")
     /// Image `icon_close`.
     static let icon_close = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_close")
     /// Image `icon_menu`.
     static let icon_menu = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_menu")
+    /// Image `image1.jpg`.
+    static let image1Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image1.jpg")
+    /// Image `image10.jpg`.
+    static let image10Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image10.jpg")
+    /// Image `image11.jpg`.
+    static let image11Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image11.jpg")
+    /// Image `image12.jpg`.
+    static let image12Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image12.jpg")
+    /// Image `image13.jpg`.
+    static let image13Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image13.jpg")
+    /// Image `image14.jpg`.
+    static let image14Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image14.jpg")
+    /// Image `image15.jpg`.
+    static let image15Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image15.jpg")
+    /// Image `image16.jpg`.
+    static let image16Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image16.jpg")
+    /// Image `image17.jpg`.
+    static let image17Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image17.jpg")
+    /// Image `image18.jpg`.
+    static let image18Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image18.jpg")
+    /// Image `image19.jpg`.
+    static let image19Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image19.jpg")
+    /// Image `image2.jpg`.
+    static let image2Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image2.jpg")
+    /// Image `image20.jpg`.
+    static let image20Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image20.jpg")
+    /// Image `image21.jpg`.
+    static let image21Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image21.jpg")
+    /// Image `image22.jpg`.
+    static let image22Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image22.jpg")
+    /// Image `image23.jpg`.
+    static let image23Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image23.jpg")
+    /// Image `image24.jpg`.
+    static let image24Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image24.jpg")
+    /// Image `image25.jpg`.
+    static let image25Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image25.jpg")
+    /// Image `image26.jpg`.
+    static let image26Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image26.jpg")
+    /// Image `image27.jpg`.
+    static let image27Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image27.jpg")
+    /// Image `image28.jpg`.
+    static let image28Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image28.jpg")
+    /// Image `image29.jpg`.
+    static let image29Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image29.jpg")
+    /// Image `image3.jpg`.
+    static let image3Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image3.jpg")
+    /// Image `image30.jpg`.
+    static let image30Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image30.jpg")
+    /// Image `image31.jpg`.
+    static let image31Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image31.jpg")
+    /// Image `image32.jpg`.
+    static let image32Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image32.jpg")
+    /// Image `image33.jpg`.
+    static let image33Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image33.jpg")
+    /// Image `image34.jpg`.
+    static let image34Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image34.jpg")
+    /// Image `image35.jpg`.
+    static let image35Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image35.jpg")
+    /// Image `image36.jpg`.
+    static let image36Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image36.jpg")
+    /// Image `image37.jpg`.
+    static let image37Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image37.jpg")
+    /// Image `image38.jpg`.
+    static let image38Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image38.jpg")
+    /// Image `image39.jpg`.
+    static let image39Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image39.jpg")
+    /// Image `image4.jpg`.
+    static let image4Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image4.jpg")
+    /// Image `image40.jpg`.
+    static let image40Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image40.jpg")
+    /// Image `image41.jpg`.
+    static let image41Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image41.jpg")
+    /// Image `image42.jpg`.
+    static let image42Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image42.jpg")
+    /// Image `image43.jpg`.
+    static let image43Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image43.jpg")
+    /// Image `image44.jpg`.
+    static let image44Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image44.jpg")
+    /// Image `image45.jpg`.
+    static let image45Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image45.jpg")
+    /// Image `image46.jpg`.
+    static let image46Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image46.jpg")
+    /// Image `image47.jpg`.
+    static let image47Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image47.jpg")
+    /// Image `image48.jpg`.
+    static let image48Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image48.jpg")
+    /// Image `image49.jpg`.
+    static let image49Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image49.jpg")
+    /// Image `image5.jpg`.
+    static let image5Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image5.jpg")
+    /// Image `image50.jpg`.
+    static let image50Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image50.jpg")
+    /// Image `image51.jpg`.
+    static let image51Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image51.jpg")
+    /// Image `image52.jpg`.
+    static let image52Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image52.jpg")
+    /// Image `image53.jpg`.
+    static let image53Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image53.jpg")
+    /// Image `image54.jpg`.
+    static let image54Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image54.jpg")
+    /// Image `image55.jpg`.
+    static let image55Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image55.jpg")
+    /// Image `image56.jpg`.
+    static let image56Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image56.jpg")
+    /// Image `image57.jpg`.
+    static let image57Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image57.jpg")
+    /// Image `image58.jpg`.
+    static let image58Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image58.jpg")
+    /// Image `image59.jpg`.
+    static let image59Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image59.jpg")
+    /// Image `image6.jpg`.
+    static let image6Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image6.jpg")
+    /// Image `image60.jpg`.
+    static let image60Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image60.jpg")
+    /// Image `image61.jpg`.
+    static let image61Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image61.jpg")
+    /// Image `image62.jpg`.
+    static let image62Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image62.jpg")
+    /// Image `image63.jpg`.
+    static let image63Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image63.jpg")
+    /// Image `image64.jpg`.
+    static let image64Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image64.jpg")
+    /// Image `image65.jpg`.
+    static let image65Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image65.jpg")
+    /// Image `image66.jpg`.
+    static let image66Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image66.jpg")
+    /// Image `image67.jpg`.
+    static let image67Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image67.jpg")
+    /// Image `image68.jpg`.
+    static let image68Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image68.jpg")
+    /// Image `image69.jpg`.
+    static let image69Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image69.jpg")
+    /// Image `image7.jpg`.
+    static let image7Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image7.jpg")
+    /// Image `image70.jpg`.
+    static let image70Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image70.jpg")
+    /// Image `image71.jpg`.
+    static let image71Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image71.jpg")
+    /// Image `image72.jpg`.
+    static let image72Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image72.jpg")
+    /// Image `image73.jpg`.
+    static let image73Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image73.jpg")
+    /// Image `image74.jpg`.
+    static let image74Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image74.jpg")
+    /// Image `image75.jpg`.
+    static let image75Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image75.jpg")
+    /// Image `image76.jpg`.
+    static let image76Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image76.jpg")
+    /// Image `image77.jpg`.
+    static let image77Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image77.jpg")
+    /// Image `image78.jpg`.
+    static let image78Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image78.jpg")
+    /// Image `image79.jpg`.
+    static let image79Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image79.jpg")
+    /// Image `image8.jpg`.
+    static let image8Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image8.jpg")
+    /// Image `image80.jpg`.
+    static let image80Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image80.jpg")
+    /// Image `image81.jpg`.
+    static let image81Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image81.jpg")
+    /// Image `image82.jpg`.
+    static let image82Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image82.jpg")
+    /// Image `image83.jpg`.
+    static let image83Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image83.jpg")
+    /// Image `image84.jpg`.
+    static let image84Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image84.jpg")
+    /// Image `image85.jpg`.
+    static let image85Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image85.jpg")
+    /// Image `image86.jpg`.
+    static let image86Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image86.jpg")
+    /// Image `image87.jpg`.
+    static let image87Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image87.jpg")
+    /// Image `image88.jpg`.
+    static let image88Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image88.jpg")
+    /// Image `image89.jpg`.
+    static let image89Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image89.jpg")
+    /// Image `image9.jpg`.
+    static let image9Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image9.jpg")
     /// Image `more`.
     static let more = Rswift.ImageResource(bundle: R.hostingBundle, name: "more")
     /// Image `navBar_back`.
     static let navBar_back = Rswift.ImageResource(bundle: R.hostingBundle, name: "navBar_back")
-    /// Image `people_1.jpg`.
-    static let people_1Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "people_1.jpg")
-    /// Image `people_2.jpg`.
-    static let people_2Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "people_2.jpg")
-    /// Image `people_3.jpg`.
-    static let people_3Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "people_3.jpg")
-    /// Image `people_4.jpg`.
-    static let people_4Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "people_4.jpg")
-    /// Image `people_5.jpg`.
-    static let people_5Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "people_5.jpg")
-    /// Image `people_6.jpg`.
-    static let people_6Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "people_6.jpg")
-    /// Image `people_7.jpg`.
-    static let people_7Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "people_7.jpg")
     /// Image `wonder_women`.
     static let wonder_women = Rswift.ImageResource(bundle: R.hostingBundle, name: "wonder_women")
-    /// Image `word_1.jpg`.
-    static let word_1Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "word_1.jpg")
-    /// Image `word_2.jpg`.
-    static let word_2Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "word_2.jpg")
     
     /// `UIImage(named: "bg_1", bundle: ..., traitCollection: ...)`
     static func bg_1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -378,11 +1176,6 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.emoji_fight, compatibleWith: traitCollection)
     }
     
-    /// `UIImage(named: "emoji_hello", bundle: ..., traitCollection: ...)`
-    static func emoji_hello(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.emoji_hello, compatibleWith: traitCollection)
-    }
-    
     /// `UIImage(named: "icon_close", bundle: ..., traitCollection: ...)`
     static func icon_close(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.icon_close, compatibleWith: traitCollection)
@@ -391,6 +1184,451 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "icon_menu", bundle: ..., traitCollection: ...)`
     static func icon_menu(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.icon_menu, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image1.jpg", bundle: ..., traitCollection: ...)`
+    static func image1Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image1Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image10.jpg", bundle: ..., traitCollection: ...)`
+    static func image10Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image10Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image11.jpg", bundle: ..., traitCollection: ...)`
+    static func image11Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image11Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image12.jpg", bundle: ..., traitCollection: ...)`
+    static func image12Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image12Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image13.jpg", bundle: ..., traitCollection: ...)`
+    static func image13Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image13Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image14.jpg", bundle: ..., traitCollection: ...)`
+    static func image14Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image14Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image15.jpg", bundle: ..., traitCollection: ...)`
+    static func image15Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image15Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image16.jpg", bundle: ..., traitCollection: ...)`
+    static func image16Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image16Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image17.jpg", bundle: ..., traitCollection: ...)`
+    static func image17Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image17Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image18.jpg", bundle: ..., traitCollection: ...)`
+    static func image18Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image18Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image19.jpg", bundle: ..., traitCollection: ...)`
+    static func image19Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image19Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image2.jpg", bundle: ..., traitCollection: ...)`
+    static func image2Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image2Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image20.jpg", bundle: ..., traitCollection: ...)`
+    static func image20Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image20Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image21.jpg", bundle: ..., traitCollection: ...)`
+    static func image21Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image21Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image22.jpg", bundle: ..., traitCollection: ...)`
+    static func image22Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image22Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image23.jpg", bundle: ..., traitCollection: ...)`
+    static func image23Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image23Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image24.jpg", bundle: ..., traitCollection: ...)`
+    static func image24Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image24Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image25.jpg", bundle: ..., traitCollection: ...)`
+    static func image25Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image25Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image26.jpg", bundle: ..., traitCollection: ...)`
+    static func image26Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image26Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image27.jpg", bundle: ..., traitCollection: ...)`
+    static func image27Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image27Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image28.jpg", bundle: ..., traitCollection: ...)`
+    static func image28Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image28Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image29.jpg", bundle: ..., traitCollection: ...)`
+    static func image29Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image29Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image3.jpg", bundle: ..., traitCollection: ...)`
+    static func image3Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image3Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image30.jpg", bundle: ..., traitCollection: ...)`
+    static func image30Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image30Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image31.jpg", bundle: ..., traitCollection: ...)`
+    static func image31Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image31Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image32.jpg", bundle: ..., traitCollection: ...)`
+    static func image32Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image32Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image33.jpg", bundle: ..., traitCollection: ...)`
+    static func image33Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image33Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image34.jpg", bundle: ..., traitCollection: ...)`
+    static func image34Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image34Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image35.jpg", bundle: ..., traitCollection: ...)`
+    static func image35Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image35Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image36.jpg", bundle: ..., traitCollection: ...)`
+    static func image36Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image36Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image37.jpg", bundle: ..., traitCollection: ...)`
+    static func image37Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image37Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image38.jpg", bundle: ..., traitCollection: ...)`
+    static func image38Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image38Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image39.jpg", bundle: ..., traitCollection: ...)`
+    static func image39Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image39Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image4.jpg", bundle: ..., traitCollection: ...)`
+    static func image4Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image4Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image40.jpg", bundle: ..., traitCollection: ...)`
+    static func image40Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image40Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image41.jpg", bundle: ..., traitCollection: ...)`
+    static func image41Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image41Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image42.jpg", bundle: ..., traitCollection: ...)`
+    static func image42Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image42Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image43.jpg", bundle: ..., traitCollection: ...)`
+    static func image43Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image43Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image44.jpg", bundle: ..., traitCollection: ...)`
+    static func image44Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image44Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image45.jpg", bundle: ..., traitCollection: ...)`
+    static func image45Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image45Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image46.jpg", bundle: ..., traitCollection: ...)`
+    static func image46Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image46Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image47.jpg", bundle: ..., traitCollection: ...)`
+    static func image47Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image47Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image48.jpg", bundle: ..., traitCollection: ...)`
+    static func image48Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image48Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image49.jpg", bundle: ..., traitCollection: ...)`
+    static func image49Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image49Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image5.jpg", bundle: ..., traitCollection: ...)`
+    static func image5Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image5Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image50.jpg", bundle: ..., traitCollection: ...)`
+    static func image50Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image50Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image51.jpg", bundle: ..., traitCollection: ...)`
+    static func image51Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image51Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image52.jpg", bundle: ..., traitCollection: ...)`
+    static func image52Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image52Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image53.jpg", bundle: ..., traitCollection: ...)`
+    static func image53Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image53Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image54.jpg", bundle: ..., traitCollection: ...)`
+    static func image54Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image54Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image55.jpg", bundle: ..., traitCollection: ...)`
+    static func image55Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image55Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image56.jpg", bundle: ..., traitCollection: ...)`
+    static func image56Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image56Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image57.jpg", bundle: ..., traitCollection: ...)`
+    static func image57Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image57Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image58.jpg", bundle: ..., traitCollection: ...)`
+    static func image58Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image58Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image59.jpg", bundle: ..., traitCollection: ...)`
+    static func image59Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image59Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image6.jpg", bundle: ..., traitCollection: ...)`
+    static func image6Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image6Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image60.jpg", bundle: ..., traitCollection: ...)`
+    static func image60Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image60Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image61.jpg", bundle: ..., traitCollection: ...)`
+    static func image61Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image61Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image62.jpg", bundle: ..., traitCollection: ...)`
+    static func image62Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image62Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image63.jpg", bundle: ..., traitCollection: ...)`
+    static func image63Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image63Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image64.jpg", bundle: ..., traitCollection: ...)`
+    static func image64Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image64Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image65.jpg", bundle: ..., traitCollection: ...)`
+    static func image65Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image65Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image66.jpg", bundle: ..., traitCollection: ...)`
+    static func image66Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image66Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image67.jpg", bundle: ..., traitCollection: ...)`
+    static func image67Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image67Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image68.jpg", bundle: ..., traitCollection: ...)`
+    static func image68Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image68Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image69.jpg", bundle: ..., traitCollection: ...)`
+    static func image69Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image69Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image7.jpg", bundle: ..., traitCollection: ...)`
+    static func image7Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image7Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image70.jpg", bundle: ..., traitCollection: ...)`
+    static func image70Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image70Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image71.jpg", bundle: ..., traitCollection: ...)`
+    static func image71Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image71Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image72.jpg", bundle: ..., traitCollection: ...)`
+    static func image72Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image72Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image73.jpg", bundle: ..., traitCollection: ...)`
+    static func image73Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image73Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image74.jpg", bundle: ..., traitCollection: ...)`
+    static func image74Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image74Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image75.jpg", bundle: ..., traitCollection: ...)`
+    static func image75Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image75Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image76.jpg", bundle: ..., traitCollection: ...)`
+    static func image76Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image76Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image77.jpg", bundle: ..., traitCollection: ...)`
+    static func image77Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image77Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image78.jpg", bundle: ..., traitCollection: ...)`
+    static func image78Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image78Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image79.jpg", bundle: ..., traitCollection: ...)`
+    static func image79Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image79Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image8.jpg", bundle: ..., traitCollection: ...)`
+    static func image8Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image8Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image80.jpg", bundle: ..., traitCollection: ...)`
+    static func image80Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image80Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image81.jpg", bundle: ..., traitCollection: ...)`
+    static func image81Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image81Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image82.jpg", bundle: ..., traitCollection: ...)`
+    static func image82Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image82Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image83.jpg", bundle: ..., traitCollection: ...)`
+    static func image83Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image83Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image84.jpg", bundle: ..., traitCollection: ...)`
+    static func image84Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image84Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image85.jpg", bundle: ..., traitCollection: ...)`
+    static func image85Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image85Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image86.jpg", bundle: ..., traitCollection: ...)`
+    static func image86Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image86Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image87.jpg", bundle: ..., traitCollection: ...)`
+    static func image87Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image87Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image88.jpg", bundle: ..., traitCollection: ...)`
+    static func image88Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image88Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image89.jpg", bundle: ..., traitCollection: ...)`
+    static func image89Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image89Jpg, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "image9.jpg", bundle: ..., traitCollection: ...)`
+    static func image9Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image9Jpg, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "more", bundle: ..., traitCollection: ...)`
@@ -403,54 +1641,9 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.navBar_back, compatibleWith: traitCollection)
     }
     
-    /// `UIImage(named: "people_1.jpg", bundle: ..., traitCollection: ...)`
-    static func people_1Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.people_1Jpg, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "people_2.jpg", bundle: ..., traitCollection: ...)`
-    static func people_2Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.people_2Jpg, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "people_3.jpg", bundle: ..., traitCollection: ...)`
-    static func people_3Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.people_3Jpg, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "people_4.jpg", bundle: ..., traitCollection: ...)`
-    static func people_4Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.people_4Jpg, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "people_5.jpg", bundle: ..., traitCollection: ...)`
-    static func people_5Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.people_5Jpg, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "people_6.jpg", bundle: ..., traitCollection: ...)`
-    static func people_6Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.people_6Jpg, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "people_7.jpg", bundle: ..., traitCollection: ...)`
-    static func people_7Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.people_7Jpg, compatibleWith: traitCollection)
-    }
-    
     /// `UIImage(named: "wonder_women", bundle: ..., traitCollection: ...)`
     static func wonder_women(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.wonder_women, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "word_1.jpg", bundle: ..., traitCollection: ...)`
-    static func word_1Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.word_1Jpg, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "word_2.jpg", bundle: ..., traitCollection: ...)`
-    static func word_2Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.word_2Jpg, compatibleWith: traitCollection)
     }
     
     fileprivate init() {}

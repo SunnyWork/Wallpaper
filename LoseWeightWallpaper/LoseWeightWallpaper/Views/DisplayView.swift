@@ -15,23 +15,22 @@ class DisplayView: UIView {
   override init(frame: CGRect) {
     super.init(frame: frame)
     
+    var wholeArray = Array(1...89)
+    wholeArray.shuffle()
     
     var imageArr: [String] = []
     
-    for one in 1...7 {
-      imageArr.append("people_\(one).jpg")
+    for one in 1...40 {
+      imageArr.append("image\(wholeArray[one]).jpg")
     }
     
-    for one in 1...2 {
-      imageArr.append("word_\(one).jpg")
-    }
     imageArr.shuffle()
     
     imageView.animationDurtion = 5
     imageView.duration = 0.5
     imageView.animationType = PSY3DAnimationTpye.moveIn
     imageView.toLeftSubtype = PSY3DDirectionSubtype.fromRight
-    imageView.toRightSubtype = PSY3DDirectionSubtype.fromRight
+    imageView.toRightSubtype = PSY3DDirectionSubtype.fromLeft
     imageView.psy3D_ImageDataSource = imageArr
 
     addSubview(imageView)

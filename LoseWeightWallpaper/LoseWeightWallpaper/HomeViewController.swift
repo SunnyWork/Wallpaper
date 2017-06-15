@@ -179,35 +179,23 @@ class HomeViewController: AdBaseViewController {
 
 extension HomeViewController {
   fileprivate func showHello() {
-    let iv = UIImageView()
-    iv.image = R.image.emoji_hello()
-    view.addSubview(iv)
     
     let fv = UIImageView()
     fv.image = R.image.emoji_fight()
     view.addSubview(fv)
     
-    iv.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
-    iv.center = view.center
-    fv.frame = iv.frame
+    fv.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
+    fv.center = view.center
     
-    UIView.animate(withDuration: 1, animations: {
-      iv.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
-      iv.center = self.view.center
+    UIView.animate(withDuration: 0.5, animations: {
+      fv.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+      fv.center = self.view.center
     }, completion: { _ in
       DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
-        iv.removeFromSuperview()
-        
-        UIView.animate(withDuration: 0.5, animations: {
-          fv.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
-          fv.center = self.view.center
-        }, completion: { _ in
-          DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
-            fv.removeFromSuperview()
-          }
-        })
+        fv.removeFromSuperview()
       }
     })
+    
   }
   
   func finishSport() {
@@ -273,7 +261,7 @@ extension HomeViewController {
     view.addSubview(nowBtn)
     nowBtn.layer.cornerRadius = btnWidth / 2
     nowBtn.backgroundColor = DesignColor.Desire.withAlphaComponent(0.8)
-    nowBtn.setTitle("Do it now!", for: .normal)
+    nowBtn.setTitle("Workout now!", for: .normal)
     nowBtn.titleLabel?.font = FontType.Medium.font(size: 20)
     var offSet: CGFloat = 130
     if view.frame.size.width < 375 {

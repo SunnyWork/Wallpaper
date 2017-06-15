@@ -161,13 +161,13 @@
 #pragma mark 向左滑动浏览下一张图片
 -(void)leftSwipe:(UISwipeGestureRecognizer *)gesture
 {
-    [self transitionAnimation:YES andAnimationMode:4];
+    [self transitionAnimation:YES andAnimationMode:self.animationType];
 }
 
 #pragma mark 向右滑动浏览上一张图片
 -(void)rightSwipe:(UISwipeGestureRecognizer *)gesture
 {
-    [self transitionAnimation:NO andAnimationMode:5];
+    [self transitionAnimation:NO andAnimationMode:3];
 }
 
 - (void)show3DLableView

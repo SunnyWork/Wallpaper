@@ -18,22 +18,20 @@ class PaperListView: UIView, ClickImgDelegate {
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    for one in 1...7 {
-      imageArr.append("people_\(one).jpg")
-    }
+    var wholeArray = Array(1...89)
+    wholeArray.shuffle()
     
-    for one in 1...2 {
-      imageArr.append("word_\(one).jpg")
+    for one in wholeArray {
+      imageArr.append("image\(one).jpg")
     }
-    imageArr.shuffle()
     
     let imageView = PSY3D_CircleAnimationView()
     imageView.animationDurtion = 0
     imageView.duration = 0.5
     imageView.delegate = self
-    imageView.animationType = PSY3DAnimationTpye.fade
+    imageView.animationType = PSY3DAnimationTpye.moveIn
     imageView.toLeftSubtype = PSY3DDirectionSubtype.fromRight
-    imageView.toRightSubtype = PSY3DDirectionSubtype.fromRight
+    imageView.toRightSubtype = PSY3DDirectionSubtype.fromLeft
     imageView.psy3D_ImageDataSource = imageArr
     
     addSubview(imageView)
