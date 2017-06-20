@@ -142,7 +142,8 @@ class AlarmViewController: BaseViewController, UITableViewDelegate, UITableViewD
     
     let dataModel : AlertDataModel = self.arrayData?.object(at: indexPath.row) as! AlertDataModel
     
-    cell?.labelTime?.text = dataModel.noticeTime as String
+    let fullTime = dataModel.noticeTime as String
+    cell?.labelTime?.text = fullTime.subString(start: 11, length: 5)
     
     cell?.labelDescribe?.text = dataModel.noticeTab as String
     

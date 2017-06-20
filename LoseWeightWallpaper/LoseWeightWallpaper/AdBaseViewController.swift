@@ -8,26 +8,39 @@
 
 import UIKit
 import GoogleMobileAds
+import RxSwift
 
 class AdBaseViewController: UIViewController {
   var bannerView: GADBannerView!
-
+  fileprivate let disposeBag = DisposeBag()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-   
+    
     bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
     bannerView.adUnitID = adUit
     bannerView.rootViewController = self
     let request = GADRequest()
     request.testDevices = [ kGADSimulatorID, "39fb59212590926492a7b138effe9578" ];
     bannerView.load(request)
+    
+    
+    IAPHelper.sharedInstance.bought.asObservable().subscribe(onNext: {
+      buy in
+      guard buy else { return }
+      self.bannerView.removeFromSuperview()
+    }).addDisposableTo(self.disposeBag)
   }
   
+  
   override func viewDidAppear(_ animated: Bool) {
-    super.viewDidDisappear(animated)
+    super.viewDidAppear(animated)
     
-    view.addSubview(bannerView)
-    bannerView.bottomToSuper = 0
+    if !IAPHelper.sharedInstance.bought.value {
+      view.addSubview(bannerView)
+      bannerView.bottomToSuper = 0
+    }
+    
   }
 }
 

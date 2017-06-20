@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoseWeightWallpaper/IAP/IAPHelper.swift"
+            timestampString = "519486399.204239"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "productsRequest(_:didReceive:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoseWeightWallpaper/IAP/IAPHelper.swift"
+            timestampString = "519486399.204239"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "purchase(callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.IAPHelper.(purchase () -&gt; ()).(closure #1)"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/IAP/IAPHelper.swift"
+                  timestampString = "519483861.269497"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.IAPHelper.(purchase () -&gt; ()).(closure #1)"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/IAP/IAPHelper.swift"
+                  timestampString = "519483861.271392"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoseWeightWallpaper/IAP/IAPHelper.swift"
+            timestampString = "519486399.204239"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "purchase(callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoseWeightWallpaper/HomeViewController.swift"
+            timestampString = "519616864.309297"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "442"
+            endingLineNumber = "442"
+            landmarkName = "showBuyView(text:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.HomeViewController.((showBuyView in _F77EB85B1D7BC94FBB2F63FEB12CA88C) (text : Swift.String) -&gt; ()).(closure #1)"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/HomeViewController.swift"
+                  timestampString = "519484149.967892"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "404"
+                  endingLineNumber = "404"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.HomeViewController.((showBuyView in _F77EB85B1D7BC94FBB2F63FEB12CA88C) (text : Swift.String) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/HomeViewController.swift"
+                  timestampString = "519484149.969434"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "404"
+                  endingLineNumber = "404"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoseWeightWallpaper/HomeViewController.swift"
+            timestampString = "519616864.309297"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "444"
+            endingLineNumber = "444"
+            landmarkName = "showBuyView(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoseWeightWallpaper/IAP/IAPHelper.swift"
+            timestampString = "519485745.409896"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "checkProductAlreadyBuy()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.IAPHelper.checkProductAlreadyBuy () -&gt; ()"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/IAP/IAPHelper.swift"
+                  timestampString = "519485601.333571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.IAPHelper.(checkProductAlreadyBuy () -&gt; ()).(closure #1)"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/IAP/IAPHelper.swift"
+                  timestampString = "519485601.335289"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoseWeightWallpaper/AdBaseViewController.swift"
+            timestampString = "519486236.208289"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.AdBaseViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/AdBaseViewController.swift"
+                  timestampString = "519486142.004496"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1891">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.AdBaseViewController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/AdBaseViewController.swift"
+                  timestampString = "519486142.006511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoseWeightWallpaper/HomeViewController.swift"
+            timestampString = "519616864.309297"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "336"
+            endingLineNumber = "336"
+            landmarkName = "buildBottomView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.HomeViewController.(buildBottomView in _F77EB85B1D7BC94FBB2F63FEB12CA88C) () -&gt; ()"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/HomeViewController.swift"
+                  timestampString = "519616368.335752"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "327"
+                  endingLineNumber = "327"
+                  offsetFromSymbolStart = "7126">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.HomeViewController.((buildBottomView in _F77EB85B1D7BC94FBB2F63FEB12CA88C) () -&gt; ()).(closure #7)"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/HomeViewController.swift"
+                  timestampString = "519616368.337896"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "328"
+                  endingLineNumber = "328"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoseWeightWallpaper/HomeViewController.swift"
+            timestampString = "519616864.309297"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "319"
+            endingLineNumber = "319"
+            landmarkName = "buildBottomView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.HomeViewController.(buildBottomView in _F77EB85B1D7BC94FBB2F63FEB12CA88C) () -&gt; ()"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/HomeViewController.swift"
+                  timestampString = "519616368.353843"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "313"
+                  endingLineNumber = "313"
+                  offsetFromSymbolStart = "6712">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoseWeightWallpaper.HomeViewController.((buildBottomView in _F77EB85B1D7BC94FBB2F63FEB12CA88C) () -&gt; ()).(closure #5)"
+                  moduleName = "LoseWeightWallpaper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qing.jiao/Wallpaper/LoseWeightWallpaper/LoseWeightWallpaper/HomeViewController.swift"
+                  timestampString = "519616368.355486"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "314"
+                  endingLineNumber = "314"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

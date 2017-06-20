@@ -24,6 +24,11 @@ class RememberView: UIView {
     backgroundColor = UIColor.black.withAlphaComponent(0.9)
     layer.cornerRadius = 8
     
+    var ivWidth: CGFloat = 200
+    if frame.size.width < 375 {
+      ivWidth = 125
+    }
+    
     let iv = UIImageView()
     addSubview(iv)
     iv.contentMode = .scaleAspectFit
@@ -33,13 +38,18 @@ class RememberView: UIView {
     iv.snp.makeConstraints { make in
       make.centerX.equalTo(self)
       make.top.equalTo(self).offset(20)
-      make.height.width.equalTo(200)
+      make.height.width.equalTo(ivWidth)
+    }
+    
+    var fontSize: CGFloat = 25
+    if frame.size.width < 375 || UIDevice.current.userInterfaceIdiom == .pad {
+      fontSize = 22
     }
     
     let infoLabel = UILabel()
     addSubview(infoLabel)
     infoLabel.text = "Remember why you do this!"
-    infoLabel.font = FontType.Medium.font(size: 25)
+    infoLabel.font = FontType.Medium.font(size: fontSize)
     infoLabel.textColor = .white
     infoLabel.numberOfLines = 0
     infoLabel.textAlignment = .center
@@ -68,18 +78,26 @@ class RememberView: UIView {
       self.callback()
     })
     
+    var btnWidth: CGFloat = 150
+    if frame.size.width < 375 {
+      btnWidth = 115
+    }
+    
     let keepBtn = UIButton()
     addSubview(keepBtn)
-    keepBtn.layer.cornerRadius = 75
+    keepBtn.layer.cornerRadius = btnWidth / 2
+    keepBtn.titleLabel?.numberOfLines = 0
+    keepBtn.titleLabel?.contentMode = .center
+    keepBtn.titleLabel?.font = FontType.Medium.font(size: 20)
     keepBtn.backgroundColor = DesignColor.Desire
     keepBtn.setTitle("Finish it!", for: .normal)
     keepBtn.setTitleColor(.white, for: .normal)
     keepBtn.snp.makeConstraints { make in
       make.centerX.equalTo(self)
       make.top.equalTo(okBtn.snp.bottom).offset(30)
-      make.width.equalTo(150)
-      make.height.equalTo(150)
-      make.bottom.equalTo(self).offset(-30)
+      make.width.equalTo(btnWidth)
+      make.height.equalTo(btnWidth)
+      make.bottom.equalTo(self).offset(-15)
     }
     
     _ = keepBtn.rx.tap.subscribe(onNext: { [unowned self] _ in

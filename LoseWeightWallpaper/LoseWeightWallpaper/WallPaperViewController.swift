@@ -18,7 +18,7 @@ class PaperListView: UIView, ClickImgDelegate {
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    var wholeArray = Array(1...89)
+    var wholeArray = Array(1...90)
     wholeArray.shuffle()
     
     for one in wholeArray {

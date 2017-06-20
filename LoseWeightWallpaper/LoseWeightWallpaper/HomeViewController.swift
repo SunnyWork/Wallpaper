@@ -10,7 +10,9 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import StoreKit
 
+let screenRatio = UIScreen.main.bounds.size.height / UIScreen.main.bounds.size.width
 
 class HomeViewController: AdBaseViewController {
   
@@ -33,7 +35,6 @@ class HomeViewController: AdBaseViewController {
     let swindow = MenuWindow(frame :UIScreen.main.bounds)
     return swindow
   }()
-  
   
   let weightTip = PlainTextTipView(text: "Click number to update!")
   let reasonTip = PlainTextTipView(text: "Click here to update!")
@@ -72,6 +73,7 @@ class HomeViewController: AdBaseViewController {
       self.updateReason()
     }).addDisposableTo(self.disposeBag)
     
+    IAPHelper.sharedInstance.checkProductAlreadyBuy()
   }
   
   fileprivate func updateCurrentView() {
@@ -147,8 +149,6 @@ class HomeViewController: AdBaseViewController {
     }
   }
   
-  
-  
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     resetProgressBar()
@@ -179,9 +179,16 @@ class HomeViewController: AdBaseViewController {
 
 extension HomeViewController {
   fileprivate func showHello() {
-    
+    popImage(R.image.emoji_fight()!)
+  }
+  
+  fileprivate func showThanks() {
+    popImage(R.image.emoji_thanks()!)
+  }
+  
+  fileprivate func popImage(_ image: UIImage) {
     let fv = UIImageView()
-    fv.image = R.image.emoji_fight()
+    fv.image = image
     view.addSubview(fv)
     
     fv.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
@@ -195,7 +202,6 @@ extension HomeViewController {
         fv.removeFromSuperview()
       }
     })
-    
   }
   
   func finishSport() {
@@ -253,8 +259,10 @@ extension HomeViewController {
 extension HomeViewController {
   fileprivate func buildBottomView() {
     var btnWidth: CGFloat = 150
+    var fontSize = 20
     if view.frame.size.width < 375 {
-      btnWidth = 100
+      btnWidth = 115
+      fontSize = 16
     }
     
     let nowBtn = UIButton()
@@ -262,7 +270,9 @@ extension HomeViewController {
     nowBtn.layer.cornerRadius = btnWidth / 2
     nowBtn.backgroundColor = DesignColor.Desire.withAlphaComponent(0.8)
     nowBtn.setTitle("Workout now!", for: .normal)
-    nowBtn.titleLabel?.font = FontType.Medium.font(size: 20)
+    nowBtn.titleLabel?.numberOfLines = 0
+    nowBtn.titleLabel?.contentMode = .center
+    nowBtn.titleLabel?.font = FontType.Medium.font(size: CGFloat(fontSize))
     var offSet: CGFloat = 130
     if view.frame.size.width < 375 {
       offSet = 10
@@ -283,34 +293,61 @@ extension HomeViewController {
     wallPaperButton.layer.cornerRadius = 10
     wallPaperButton.backgroundColor = DesignColor.Desire.withAlphaComponent(0.8)
     wallPaperButton.setTitle("Select Wallpaper", for: .normal)
-    wallPaperButton.titleLabel?.font = FontType.Medium.font(size: 20)
     view.addSubview(wallPaperButton)
-    wallPaperButton.snp.makeConstraints { make in
-      make.top.equalTo(nowBtn.snp.bottom).offset(20)
-      make.width.equalTo(220)
-      make.centerX.equalTo(view)
-      make.height.equalTo(30)
-    }
+    wallPaperButton.titleLabel?.numberOfLines = 0
+
     _ = wallPaperButton.rx.tap.subscribe(onNext: { [unowned self] obj in
       self.present(WallPaperViewController(), animated: true, completion: nil)
     })
     
     let alarmButton = UIButton()
     alarmButton.layer.cornerRadius = 10
+    alarmButton.titleLabel?.numberOfLines = 0
     alarmButton.backgroundColor = DesignColor.Desire.withAlphaComponent(0.8)
     alarmButton.setTitle("Set Alarm", for: .normal)
-    alarmButton.titleLabel?.font = FontType.Medium.font(size: 20)
     view.addSubview(alarmButton)
-    alarmButton.snp.makeConstraints { make in
-      make.top.equalTo(wallPaperButton.snp.bottom).offset(20)
-      make.width.equalTo(220)
-      make.centerX.equalTo(view)
-      make.height.equalTo(30)
-    }
+    
     _ = alarmButton.rx.tap.subscribe(onNext: { [unowned self] obj in
       let nav = BaseNavigationController(rootViewController: AlarmViewController())
       self.present(nav, animated: true, completion: nil)
     })
+    
+    if screenRatio > 1.7 {
+      alarmButton.titleLabel?.font = FontType.Medium.font(size: 20)
+      wallPaperButton.titleLabel?.font = FontType.Medium.font(size: 20)
+
+      wallPaperButton.snp.makeConstraints { make in
+        make.top.equalTo(nowBtn.snp.bottom).offset(20)
+        make.width.equalTo(220)
+        make.centerX.equalTo(view)
+        make.height.equalTo(30)
+      }
+      
+      alarmButton.snp.makeConstraints { make in
+        make.top.equalTo(wallPaperButton.snp.bottom).offset(20)
+        make.width.equalTo(220)
+        make.centerX.equalTo(view)
+        make.height.equalTo(30)
+      }
+    } else {
+      alarmButton.titleLabel?.font = FontType.Medium.font(size: 16)
+      wallPaperButton.titleLabel?.font = FontType.Medium.font(size: 16)
+
+      wallPaperButton.snp.makeConstraints { make in
+        make.bottom.equalTo(view).offset(-100)
+        make.height.equalTo(50)
+        make.leading.equalTo(view).offset(10)
+        make.trailing.equalTo(nowBtn.snp.leading).offset(-10)
+      }
+      
+      alarmButton.snp.makeConstraints { make in
+        make.bottom.equalTo(view).offset(-100)
+        make.height.equalTo(50)
+        make.leading.equalTo(nowBtn.snp.trailing).offset(10)
+        make.trailing.equalTo(view).offset(-10)
+      }
+    }
+    
   }
   
   fileprivate func buildReasonView() {
@@ -387,6 +424,33 @@ extension HomeViewController {
     menuWindow.setTargetCallback = { _ in
       self.showSetTargetView(closeEable: true)
     }
+    
+    menuWindow.buyCallback = { _ in
+      self.showBuyView(text: "Just a small amount of money")
+    }
+    
+    menuWindow.thanksCallback = { _ in
+      self.showBuyView(text: "Give author a small money as thanks for the effort to make a better app ^_^")
+    }
+  }
+  
+  fileprivate func showBuyView(text: String) {
+    let inputView = BuyView(labelText: text, amount: IAPHelper.sharedInstance.getAmount()) { _ in
+      IAPHelper.sharedInstance.purchase(){
+        success in
+        if success {
+          self.showThanks()
+        }
+      }
+    }
+    
+    view.addSubview(inputView)
+    inputView.snp.makeConstraints { make in
+      make.centerX.equalTo(view)
+      make.top.equalTo(reasonView).offset(-20)
+      make.width.equalTo(view).offset(-20)
+    }
+    inputView.show()
   }
   
   fileprivate func buildProgressView() {
@@ -428,6 +492,9 @@ extension HomeViewController {
       make.top.equalTo(progress.snp.bottom).offset(9)
     }
   }
+  
+  
+  
   
 }
 

@@ -248,8 +248,11 @@ class EditAlertViewController: BaseViewController, UITableViewDelegate, UITableV
     override func clickNavRight() -> Void{
         
         let formateter : DateFormatter = DateFormatter.init()
-        formateter.dateFormat = "HH:mm"
-        
+        formateter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+      
+      let simpleformateter : DateFormatter = DateFormatter.init()
+      simpleformateter.dateFormat = "HH:mm"
+      
         let dbMgr : DBMgr = DBMgr.sharedInstance()
         
         if dataModel == nil {
@@ -263,7 +266,7 @@ class EditAlertViewController: BaseViewController, UITableViewDelegate, UITableV
             dataModel?.noticeRepeat = self.noticeRepeat!
             dataModel?.noticeTab = self.noticeTab!
             dataModel?.noticeTime = formateter.string(from: (self.selectedDate as? Date)!) as NSString
-            
+          
             UtilHelper.deleteNotification(id: dataModel?.noticeId as! String)
             dbMgr.update_alert_table_data((dataModel?.noticeId)! as String, time: (dataModel?.noticeTime)! as String, repeat: (dataModel?.noticeRepeat)! as String, isOpen: (dataModel?.isOpen)! as String, tab: (dataModel?.noticeTab)! as String)
         }

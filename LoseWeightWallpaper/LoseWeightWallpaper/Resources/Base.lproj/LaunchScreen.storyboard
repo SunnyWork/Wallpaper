@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="people_4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uGR-kV-m6d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uGR-kV-m6d">
                                 <rect key="frame" x="58" y="155" width="240" height="128"/>
                             </imageView>
                         </subviews>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="people_4.jpg" width="564" height="845"/>
+        <image name="image3.jpg" width="564" height="837"/>
     </resources>
 </document>

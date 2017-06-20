@@ -14,11 +14,11 @@ import RxCocoa
 class MenuWindow: UIWindow {
   fileprivate let disposeBag = DisposeBag()
   var setTargetCallback: (() -> Void)?
+  var buyCallback: (() -> Void)?
+  var thanksCallback: (() -> Void)?
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    
-    //backgroundColor = UIColor.white.withAlphaComponent(0.5)
     
     let tapG = UITapGestureRecognizer()
     addGestureRecognizer(tapG)
@@ -49,6 +49,40 @@ class MenuWindow: UIWindow {
         self.setTargetCallback?()
       }
     })
+    
+    if !DataContainer.shared.bought {
+      let buyBtn = UIButton()
+      sideView.addSubview(buyBtn)
+      buyBtn.titleLabel?.textColor = UIColor.white
+      buyBtn.titleLabel?.numberOfLines = 0
+      buyBtn.setTitle("Thanks author", for: .normal)
+      buyBtn.snp.makeConstraints { make in
+        make.leading.equalTo(17)
+        make.top.equalTo(targetBtn.snp.bottom).offset(20)
+        make.centerX.equalTo(sideView)
+      }
+      _ = buyBtn.rx.tap.subscribe(onNext: { [unowned self] obj in
+        self.hideAnimation() { _ in
+          self.thanksCallback?()
+        }
+      })
+      
+      let adBtn = UIButton()
+      sideView.addSubview(adBtn)
+      adBtn.titleLabel?.textColor = UIColor.white
+      adBtn.titleLabel?.numberOfLines = 0
+      adBtn.setTitle("Remove Ads", for: .normal)
+      adBtn.snp.makeConstraints { make in
+        make.leading.equalTo(17)
+        make.top.equalTo(buyBtn.snp.bottom).offset(20)
+        make.centerX.equalTo(sideView)
+      }
+      _ = adBtn.rx.tap.subscribe(onNext: { [unowned self] obj in
+        self.hideAnimation() { _ in
+          self.buyCallback?()
+        }
+      })
+    }
   }
   
   func showAnimation(_ completion: ((Bool) -> Void)?){
@@ -70,7 +104,7 @@ class MenuWindow: UIWindow {
     }, completion: {(f : Bool) -> Void in
       self.windowLevel = UIWindowLevelNormal - 1
       UIApplication.shared.delegate?.window!?.makeKeyAndVisible()
-     
+      
       if completion != nil {
         completion!(f)
       }

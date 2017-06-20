@@ -45,7 +45,19 @@ class DataContainer {
          UserDefaults.standard.set(true, forKey: "tipsShowedBefore")
      }
     get {
-      if let v = UserDefaults.standard.object(forKey: "tipsShowedBefore")  {
+      if UserDefaults.standard.object(forKey: "tipsShowedBefore") != nil  {
+        return true
+      }
+      return false
+    }
+  }
+  
+  var bought: Bool {
+    set {
+      UserDefaults.standard.set(true, forKey: "bought")
+    }
+    get {
+      if UserDefaults.standard.object(forKey: "bought") != nil  {
         return true
       }
       return false

@@ -19,7 +19,7 @@ class SportViewController: AdBaseViewController {
   fileprivate let coverView = UIImageView()
   
   fileprivate let bgV = DisplayView()
-
+  
   fileprivate var totTime = 0 //mins
   fileprivate var countDown = 0 //s
   fileprivate var timer: Timer?
@@ -42,13 +42,9 @@ class SportViewController: AdBaseViewController {
     timer = nil
     
     
-    showStartAnimation()
     timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
   }
   
-  func showStartAnimation() {
-    
-  }
   
   func update() {
     countDown -= 1

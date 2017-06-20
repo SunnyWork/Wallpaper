@@ -25,6 +25,9 @@ class DisplayView: UIView {
     }
     
     imageArr.shuffle()
+    imageArr.insert("image90.jpg", at: 0)
+    imageArr.insert("image76.jpg", at: 0)
+
     
     imageView.animationDurtion = 5
     imageView.duration = 0.5

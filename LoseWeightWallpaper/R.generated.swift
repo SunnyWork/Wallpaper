@@ -22,7 +22,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 105 files.
+  /// This `R.file` struct is generated, and contains static references to 106 files.
   struct file {
     /// Resource file `IQKeyboardManager.bundle`.
     static let iQKeyboardManagerBundle = Rswift.FileResource(bundle: R.hostingBundle, name: "IQKeyboardManager", pathExtension: "bundle")
@@ -230,6 +230,8 @@ struct R: Rswift.Validatable {
     static let image89Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image89", pathExtension: "jpg")
     /// Resource file `image9.jpg`.
     static let image9Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image9", pathExtension: "jpg")
+    /// Resource file `image90.jpg`.
+    static let image90Jpg = Rswift.FileResource(bundle: R.hostingBundle, name: "image90", pathExtension: "jpg")
     /// Resource file `keep.mp3`.
     static let keepMp3 = Rswift.FileResource(bundle: R.hostingBundle, name: "keep", pathExtension: "mp3")
     /// Resource file `wining.mp3`.
@@ -853,6 +855,12 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
     
+    /// `bundle.url(forResource: "image90", withExtension: "jpg")`
+    static func image90Jpg(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.image90Jpg
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     /// `bundle.url(forResource: "keep", withExtension: "mp3")`
     static func keepMp3(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.keepMp3
@@ -957,7 +965,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 98 images.
+  /// This `R.image` struct is generated, and contains static references to 100 images.
   struct image {
     /// Image `bg_1`.
     static let bg_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "bg_1")
@@ -967,6 +975,8 @@ struct R: Rswift.Validatable {
     static let despise = Rswift.ImageResource(bundle: R.hostingBundle, name: "despise")
     /// Image `emoji_fight`.
     static let emoji_fight = Rswift.ImageResource(bundle: R.hostingBundle, name: "emoji_fight")
+    /// Image `emoji_thanks`.
+    static let emoji_thanks = Rswift.ImageResource(bundle: R.hostingBundle, name: "emoji_thanks")
     /// Image `icon_close`.
     static let icon_close = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon_close")
     /// Image `icon_menu`.
@@ -1149,6 +1159,8 @@ struct R: Rswift.Validatable {
     static let image89Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image89.jpg")
     /// Image `image9.jpg`.
     static let image9Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image9.jpg")
+    /// Image `image90.jpg`.
+    static let image90Jpg = Rswift.ImageResource(bundle: R.hostingBundle, name: "image90.jpg")
     /// Image `more`.
     static let more = Rswift.ImageResource(bundle: R.hostingBundle, name: "more")
     /// Image `navBar_back`.
@@ -1174,6 +1186,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "emoji_fight", bundle: ..., traitCollection: ...)`
     static func emoji_fight(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.emoji_fight, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "emoji_thanks", bundle: ..., traitCollection: ...)`
+    static func emoji_thanks(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.emoji_thanks, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "icon_close", bundle: ..., traitCollection: ...)`
@@ -1631,6 +1648,11 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.image9Jpg, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "image90.jpg", bundle: ..., traitCollection: ...)`
+    static func image90Jpg(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.image90Jpg, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "more", bundle: ..., traitCollection: ...)`
     static func more(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.more, compatibleWith: traitCollection)
@@ -1723,7 +1745,7 @@ struct _R: Rswift.Validatable {
       let name = "LaunchScreen"
       
       static func validate() throws {
-        if UIKit.UIImage(named: "people_4.jpg") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'people_4.jpg' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "image3.jpg") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'image3.jpg' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
       }
       
       fileprivate init() {}
